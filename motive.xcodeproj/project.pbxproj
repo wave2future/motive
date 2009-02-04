@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4784B2A00F368E2E00D331F4 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4784B29F0F368E2E00D331F4 /* Utils.h */; };
+		4784B2A00F368E2E00D331F4 /* MVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4784B29F0F368E2E00D331F4 /* MVLog.h */; };
+		47CB89810F3A5AA3001034C0 /* Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = 47CB89800F3A5AA3001034C0 /* Motive.h */; };
 		D2AAC088055469A000DB518D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -16,7 +17,8 @@
 		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF5E0370ADEE00C91783 /* motive_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motive_Prefix.pch; sourceTree = "<group>"; };
-		4784B29F0F368E2E00D331F4 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		4784B29F0F368E2E00D331F4 /* MVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLog.h; sourceTree = "<group>"; };
+		47CB89800F3A5AA3001034C0 /* Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motive.h; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E8BE07B2D77200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -90,7 +92,8 @@
 		4784B29E0F368E2E00D331F4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4784B29F0F368E2E00D331F4 /* Utils.h */,
+				4784B29F0F368E2E00D331F4 /* MVLog.h */,
+				47CB89800F3A5AA3001034C0 /* Motive.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -102,7 +105,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4784B2A00F368E2E00D331F4 /* Utils.h in Headers */,
+				4784B2A00F368E2E00D331F4 /* MVLog.h in Headers */,
+				47CB89810F3A5AA3001034C0 /* Motive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
