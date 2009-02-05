@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		4784B2A00F368E2E00D331F4 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4784B29F0F368E2E00D331F4 /* Utils.h */; };
 		D2AAC088055469A000DB518D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		E26B59B80F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E26B59B60F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.h */; };
+		E26B59B90F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B59B70F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.m */; };
+		E26B59CC0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E26B59CA0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.h */; };
+		E26B59CD0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B59CB0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.m */; };
+		E26B59E00F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E26B59DE0F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.h */; };
+		E26B59E10F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B59DF0F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		4784B29F0F368E2E00D331F4 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E8BE07B2D77200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		E26B59B60F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
+		E26B59B70F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
+		E26B59CA0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
+		E26B59CB0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
+		E26B59DE0F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
+		E26B59DF0F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,7 @@
 		0867D691FE84028FC02AAC07 /* motive */ = {
 			isa = PBXGroup;
 			children = (
+				E26B59B40F3A87870036AAB0 /* External */,
 				4784B29E0F368E2E00D331F4 /* Source */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
@@ -95,6 +108,27 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		E26B59B40F3A87870036AAB0 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				E26B59B50F3A87870036AAB0 /* CocoaDev */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		E26B59B50F3A87870036AAB0 /* CocoaDev */ = {
+			isa = PBXGroup;
+			children = (
+				E26B59B60F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.h */,
+				E26B59B70F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.m */,
+				E26B59DE0F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.h */,
+				E26B59DF0F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.m */,
+				E26B59CA0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.h */,
+				E26B59CB0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.m */,
+			);
+			path = CocoaDev;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -103,6 +137,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4784B2A00F368E2E00D331F4 /* Utils.h in Headers */,
+				E26B59B80F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.h in Headers */,
+				E26B59CC0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.h in Headers */,
+				E26B59E00F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26B59B90F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.m in Sources */,
+				E26B59CD0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.m in Sources */,
+				E26B59E10F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
