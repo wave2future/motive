@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4784B2A00F368E2E00D331F4 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4784B29F0F368E2E00D331F4 /* Utils.h */; };
+		479EDB270F41188D006B9914 /* Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = 479EDB250F41188D006B9914 /* Motive.h */; };
+		479EDB280F41188D006B9914 /* MVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 479EDB260F41188D006B9914 /* MVLog.h */; };
 		D2AAC088055469A000DB518D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		E26B59B80F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E26B59B60F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.h */; };
 		E26B59B90F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B59B70F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.m */; };
@@ -22,7 +23,8 @@
 		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF5E0370ADEE00C91783 /* motive_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motive_Prefix.pch; sourceTree = "<group>"; };
-		4784B29F0F368E2E00D331F4 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		479EDB250F41188D006B9914 /* Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motive.h; sourceTree = "<group>"; };
+		479EDB260F41188D006B9914 /* MVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLog.h; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E8BE07B2D77200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		E26B59B60F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
@@ -103,7 +105,8 @@
 		4784B29E0F368E2E00D331F4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4784B29F0F368E2E00D331F4 /* Utils.h */,
+				479EDB250F41188D006B9914 /* Motive.h */,
+				479EDB260F41188D006B9914 /* MVLog.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -136,10 +139,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4784B2A00F368E2E00D331F4 /* Utils.h in Headers */,
 				E26B59B80F3A884E0036AAB0 /* NSArray+CocoaDevUsersAdditions.h in Headers */,
 				E26B59CC0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.h in Headers */,
 				E26B59E00F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.h in Headers */,
+				479EDB270F41188D006B9914 /* Motive.h in Headers */,
+				479EDB280F41188D006B9914 /* MVLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
