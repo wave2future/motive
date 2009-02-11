@@ -1,4 +1,3 @@
-
 #define CALL_POINT() [NSString stringWithFormat:@"%@#%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd)]
 
 #ifdef DEBUG
