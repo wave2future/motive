@@ -24,6 +24,8 @@
 		E26B59CD0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B59CB0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.m */; };
 		E26B59E00F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E26B59DE0F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.h */; };
 		E26B59E10F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B59DF0F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.m */; };
+		E280BF0D0F42540F002658B4 /* MVHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = E280BF0B0F42540F002658B4 /* MVHttp.h */; };
+		E280BF0E0F42540F002658B4 /* MVHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E280BF0C0F42540F002658B4 /* MVHttp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		E26B59CB0F3A89010036AAB0 /* NSSet+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
 		E26B59DE0F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
 		E26B59DF0F3A89C60036AAB0 /* NSData+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
+		E280BF0B0F42540F002658B4 /* MVHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVHttp.h; sourceTree = "<group>"; };
+		E280BF0C0F42540F002658B4 /* MVHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVHttp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 		4784B29E0F368E2E00D331F4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E280BF0A0F42540F002658B4 /* Network */,
 				E22C741F0F3BA72400773FB0 /* Persistence */,
 				E22C74660F3BAFE600773FB0 /* MVLog.h */,
 			);
@@ -182,6 +187,15 @@
 			path = CocoaDev;
 			sourceTree = "<group>";
 		};
+		E280BF0A0F42540F002658B4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E280BF0B0F42540F002658B4 /* MVHttp.h */,
+				E280BF0C0F42540F002658B4 /* MVHttp.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -198,6 +212,7 @@
 				E22C74390F3BA74100773FB0 /* FMResultSet.h in Headers */,
 				E22C744D0F3BA90A00773FB0 /* SynthesizeSingleton.h in Headers */,
 				E22C74670F3BAFE600773FB0 /* MVLog.h in Headers */,
+				E280BF0D0F42540F002658B4 /* MVHttp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +266,7 @@
 				E22C74360F3BA74100773FB0 /* FMDatabase.m in Sources */,
 				E22C74380F3BA74100773FB0 /* FMDatabaseAdditions.m in Sources */,
 				E22C743A0F3BA74100773FB0 /* FMResultSet.m in Sources */,
+				E280BF0E0F42540F002658B4 /* MVHttp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
