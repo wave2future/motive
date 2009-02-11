@@ -16,11 +16,11 @@
 }
 
 + (void)reportAppStartToAdMobWithSiteId:(NSString *)siteId {
-    [AdMobHelper reportAppStartToAdMobWithUrl:[AdMobHelper adMobUrlWithAdditionalQueryStringParams:[NSString stringWithFormat:@"site_id=", siteId]]];
+    [AdMobHelper reportAppStartToAdMobWithUrl:[AdMobHelper adMobUrlWithAdditionalQueryStringParams:[NSString stringWithFormat:@"site_id=%@", siteId]]];
 }
 
 + (void)reportAppStartToAdMobWithAppId:(NSString *)appId {
-    [AdMobHelper reportAppStartToAdMobWithUrl:[AdMobHelper adMobUrlWithAdditionalQueryStringParams:[NSString stringWithFormat:@"app_id=", appId]]];
+    [AdMobHelper reportAppStartToAdMobWithUrl:[AdMobHelper adMobUrlWithAdditionalQueryStringParams:[NSString stringWithFormat:@"app_id=%@", appId]]];
 }
 
 #pragma mark Private methods.
@@ -28,17 +28,19 @@
     return [NSString stringWithFormat:@"http://a.admob.com/f0?isu=%@&%@", [[UIDevice currentDevice] uniqueIdentifier], queryStringParams];
 }
 
-+ (void)reportAppStartToAdMobWithUrl:(NSString *)url {   
++ (void)reportAppStartToAdMobWithUrl:(NSString *)url {
     if (![[AdMobHelper adMobAppOpenReportedFilePath] fileExists]) {
-        LOG(@"Reporting application open to AdMob");
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-        LOG(@"Reporting application open to AdMob on URL @%", [[request URL] absoluteString]);
+        LOG(@"Reporting initial application start to AdMob on URL %@", [[request URL] absoluteString]);
         NSURLResponse *response;
         NSError *error;
         NSString *content = [MVHttp sendSynchronousRequest:request returningResponse:&response error:&error];        
         if ((!error) && ([MVHttp statusCodeForResponse:response] == HTTP_OK) && ([content length] > 0)) {
+            LOG(@"Successfully reported app open, response: %@", content);
             [[AdMobHelper adMobAppOpenReportedFilePath] touchFile];
         }
+    } else {
+        LOG(@"App has already been reported");      
     }
 }
 
