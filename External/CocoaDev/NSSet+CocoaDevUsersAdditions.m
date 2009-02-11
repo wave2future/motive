@@ -60,7 +60,7 @@
     }
     
     objectEnumerator = [self objectEnumerator];
-    while (obj = [objectEnumerator nextObject])
+    while ((obj = [objectEnumerator nextObject]))
     {
         objResult = [obj performSelector:aSelector];
         if (objResult == nil)
@@ -83,7 +83,7 @@
     }
     
     objectEnumerator = [self objectEnumerator];
-    while (obj = [objectEnumerator nextObject])
+    while ((obj = [objectEnumerator nextObject]))
     {
         objResult = [obj performSelector:aSelector withObject:anObject];
         if (objResult == nil)

@@ -77,10 +77,10 @@
     return [self subarrayWithRange:NSMakeRange(0, [self count] - 1)];
 }
 
--(NSArray *)arrayByRemovingObjectAtIndex:(unsigned)index
+-(NSArray *)arrayByRemovingObjectAtIndex:(unsigned)aindex
 {
     NSMutableArray * newArray = [NSMutableArray arrayWithArray:self];
-    [newArray removeObjectAtIndex:index];
+    [newArray removeObjectAtIndex:aindex];
     return [NSArray arrayWithArray:newArray];
 }
 
@@ -129,7 +129,7 @@
     }
     
     objectEnumerator = [self objectEnumerator];
-    while (obj = [objectEnumerator nextObject])
+    while ((obj = [objectEnumerator nextObject]))
     {
         objResult = [obj performSelector:aSelector];
         if (objResult == nil)
@@ -153,7 +153,7 @@
     }
     
     objectEnumerator = [self objectEnumerator];
-    while (obj = [objectEnumerator nextObject])
+    while ((obj = [objectEnumerator nextObject]))
     {
         objResult = [obj performSelector:aSelector withObject:anObject];
         if (objResult == nil)
@@ -171,7 +171,7 @@
     NSEnumerator *argumentEnumerator = [collection objectEnumerator];
     id target;
     
-    while (target = [targetEnumerator nextObject])
+    while ((target = [targetEnumerator nextObject]))
     {
         [target performSelector:aSelector withObject:[argumentEnumerator nextObject]];
     }

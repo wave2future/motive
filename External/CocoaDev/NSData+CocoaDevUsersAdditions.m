@@ -2,9 +2,6 @@
 
 #import "NSData+CocoaDevUsersAdditions.h"
 #include <zlib.h>
-#include <openssl/md5.h>
-#include <openssl/sha.h>
-#include <openssl/ripemd.h>
 
 
 @implementation NSData (NSDataExtension)
@@ -496,35 +493,5 @@ return [NSString stringWithCString:(char *)digestString length:2*method##_DIGEST
 
 #define SHA1_CTX				SHA_CTX
 #define SHA1_DIGEST_LENGTH		SHA_DIGEST_LENGTH
-
-- (NSData*) md5Digest
-{
-	HEComputeDigestNSData(MD5);
-}
-
-- (NSString*) md5DigestString
-{
-	HEComputeDigestNSString(MD5);
-}
-
-- (NSData*) sha1Digest
-{
-	HEComputeDigestNSData(SHA1);
-}
-
-- (NSString*) sha1DigestString
-{
-	HEComputeDigestNSString(SHA1);
-}
-
-- (NSData*) ripemd160Digest
-{
-	HEComputeDigestNSData(RIPEMD160);
-}
-
-- (NSString*) ripemd160DigestString
-{
-	HEComputeDigestNSString(RIPEMD160);
-}
 
 @end
