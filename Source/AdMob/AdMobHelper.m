@@ -1,6 +1,7 @@
 #import "AdMobHelper.h"
 #import "NSString+File.h"
 #import "MVHttp.h"
+#import "MVLog.h"
 
 @interface AdMobHelper (AdMobHelperPrivate)
 + (NSString *)adMobUrlWithAdditionalQueryStringParams:(NSString *)queryStringParams;
@@ -8,7 +9,6 @@
 @end
 
 @implementation AdMobHelper
-
 
 + (NSString *)adMobAppOpenReportedFilePath {
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
@@ -29,15 +29,15 @@
 }
 
 + (void)reportAppStartToAdMobWithUrl:(NSString *)url {   
-    NSString *appOpenPath = [AdMobHelper adMobAppOpenReportedFilePath];
-    if (![appOpenPath fileExists]) {
-        NSString *appOpenEndpoint = [NSString stringWithFormat:@"http://a.admob.com/f0?isu=%@&app_id=%@", [[UIDevice currentDevice] uniqueIdentifier], @"<APPLE ITUNES ID>"];
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:appOpenEndpoint]];
+    if (![[AdMobHelper adMobAppOpenReportedFilePath] fileExists]) {
+        LOG(@"Reporting application open to AdMob");
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+        LOG(@"Reporting application open to AdMob on URL @%", [[request URL] absoluteString]);
         NSURLResponse *response;
         NSError *error;
-        NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-        if((!error) && ([(NSHTTPURLResponse *)response statusCode] == 200) && ([responseData length] > 0)) {
-            [appOpenPath touchFile];
+        NSString *content = [MVHttp sendSynchronousRequest:request returningResponse:&response error:&error];        
+        if ((!error) && ([MVHttp statusCodeForResponse:response] == HTTP_OK) && ([content length] > 0)) {
+            [[AdMobHelper adMobAppOpenReportedFilePath] touchFile];
         }
     }
 }
