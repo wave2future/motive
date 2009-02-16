@@ -54,4 +54,12 @@
     return nil;
 }
 
+- (MVOption *)orElse:(MVOption *)other {
+    return [self isSome] ? self : other;
+}
+
+- (id)orSome:(id)some {
+    return [self isSome] ? [self some] : some;
+}
+
 @end
