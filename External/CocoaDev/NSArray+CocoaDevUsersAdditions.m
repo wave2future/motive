@@ -199,16 +199,16 @@
 
 // Quick-and-dirty NSTableView delegate methods
 // useful mainly for uncomplicated single-column tableViews
-- (int)numberOfRowsInTableView:(NSTableView *)aTableView
-{
-    return [self count];
-}
-
-- (id)tableView:(NSTableView *)aTableView
-objectValueForTableColumn:(NSTableColumn *)aTableColumn
-            row:(int)rowIndex
-{
-    return [self objectAtIndex:rowIndex];
-}
+//- (int)numberOfRowsInTableView:(NSTableView *)aTableView
+//{
+//    return [self count];
+//}
+//
+//- (id)tableView:(NSTableView *)aTableView
+//objectValueForTableColumn:(NSTableColumn *)aTableColumn
+//            row:(int)rowIndex
+//{
+//    return [self objectAtIndex:rowIndex];
+//}
 
 @end
