@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		479EDB270F41188D006B9914 /* Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = 479EDB250F41188D006B9914 /* Motive.h */; };
 		479EDB280F41188D006B9914 /* MVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 479EDB260F41188D006B9914 /* MVLog.h */; };
+		47F1E4BE0F4B7580002585B1 /* AVAudioPlayer+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = 47F1E4BC0F4B7580002585B1 /* AVAudioPlayer+Motive.h */; };
+		47F1E4BF0F4B7580002585B1 /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F1E4BD0F4B7580002585B1 /* AVAudioPlayer+Motive.m */; };
 		D2AAC088055469A000DB518D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		E23216FF0F4921CD00B79FC9 /* AdMobHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E23216FA0F4921CD00B79FC9 /* AdMobHelper.h */; };
 		E23217000F4921CD00B79FC9 /* AdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23216FB0F4921CD00B79FC9 /* AdMobHelper.m */; };
@@ -42,6 +44,8 @@
 		32DBCF5E0370ADEE00C91783 /* motive_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motive_Prefix.pch; sourceTree = "<group>"; };
 		479EDB250F41188D006B9914 /* Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motive.h; sourceTree = "<group>"; };
 		479EDB260F41188D006B9914 /* MVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLog.h; sourceTree = "<group>"; };
+		47F1E4BC0F4B7580002585B1 /* AVAudioPlayer+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+Motive.h"; sourceTree = "<group>"; };
+		47F1E4BD0F4B7580002585B1 /* AVAudioPlayer+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+Motive.m"; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E8BE07B2D77200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		E23216FA0F4921CD00B79FC9 /* AdMobHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobHelper.h; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 		4784B29E0F368E2E00D331F4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				47F1E4BB0F4B7553002585B1 /* AV */,
 				E23216F90F4921CC00B79FC9 /* AdMob */,
 				E23217080F49227900B79FC9 /* FObj */,
 				E23216FC0F4921CD00B79FC9 /* IO */,
@@ -148,6 +153,15 @@
 				479EDB260F41188D006B9914 /* MVLog.h */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		47F1E4BB0F4B7553002585B1 /* AV */ = {
+			isa = PBXGroup;
+			children = (
+				47F1E4BC0F4B7580002585B1 /* AVAudioPlayer+Motive.h */,
+				47F1E4BD0F4B7580002585B1 /* AVAudioPlayer+Motive.m */,
+			);
+			path = AV;
 			sourceTree = "<group>";
 		};
 		E23216F90F4921CC00B79FC9 /* AdMob */ = {
@@ -262,6 +276,7 @@
 				E23217010F4921CD00B79FC9 /* NSString+File.h in Headers */,
 				E23217100F49227900B79FC9 /* MVOption.h in Headers */,
 				E23217190F49254A00B79FC9 /* MVP2.h in Headers */,
+				47F1E4BE0F4B7580002585B1 /* AVAudioPlayer+Motive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +334,7 @@
 				E23217020F4921CD00B79FC9 /* NSString+File.m in Sources */,
 				E23217110F49227900B79FC9 /* MVOption.m in Sources */,
 				E232171A0F49254A00B79FC9 /* MVP2.m in Sources */,
+				47F1E4BF0F4B7580002585B1 /* AVAudioPlayer+Motive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
