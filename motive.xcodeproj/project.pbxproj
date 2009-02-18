@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		478FF4E50F4BBFCF00AC883C /* MVMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 478FF4E40F4BBFCF00AC883C /* MVMacros.h */; };
 		479EDB270F41188D006B9914 /* Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = 479EDB250F41188D006B9914 /* Motive.h */; };
 		479EDB280F41188D006B9914 /* MVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 479EDB260F41188D006B9914 /* MVLog.h */; };
 		47F1E4BE0F4B7580002585B1 /* AVAudioPlayer+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = 47F1E4BC0F4B7580002585B1 /* AVAudioPlayer+Motive.h */; };
@@ -42,6 +43,7 @@
 		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF5E0370ADEE00C91783 /* motive_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motive_Prefix.pch; sourceTree = "<group>"; };
+		478FF4E40F4BBFCF00AC883C /* MVMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMacros.h; sourceTree = "<group>"; };
 		479EDB250F41188D006B9914 /* Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motive.h; sourceTree = "<group>"; };
 		479EDB260F41188D006B9914 /* MVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLog.h; sourceTree = "<group>"; };
 		47F1E4BC0F4B7580002585B1 /* AVAudioPlayer+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+Motive.h"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				E280BF6F0F425868002658B4 /* Network */,
 				479EDB250F41188D006B9914 /* Motive.h */,
 				479EDB260F41188D006B9914 /* MVLog.h */,
+				478FF4E40F4BBFCF00AC883C /* MVMacros.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				E23217100F49227900B79FC9 /* MVOption.h in Headers */,
 				E23217190F49254A00B79FC9 /* MVP2.h in Headers */,
 				47F1E4BE0F4B7580002585B1 /* AVAudioPlayer+Motive.h in Headers */,
+				478FF4E50F4BBFCF00AC883C /* MVMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
