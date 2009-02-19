@@ -44,7 +44,35 @@
 		E23DB8450F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB8430F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h */; };
 		E23DB8460F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */; };
 		E23DB84A0F4D2E36005C8EDA /* MVMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB8490F4D2E36005C8EDA /* MVMacros.h */; };
+		E23DB8A80F4D32AA005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */; };
+		E23DB8A90F4D32AA005C8EDA /* NSData+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C80F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.m */; };
+		E23DB8AA0F4D32AA005C8EDA /* NSSet+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5CA0F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.m */; };
+		E23DB8AB0F4D32AA005C8EDA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5CD0F4D0262005C8EDA /* FMDatabase.m */; };
+		E23DB8AC0F4D32AA005C8EDA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5CF0F4D0262005C8EDA /* FMDatabaseAdditions.m */; };
+		E23DB8AD0F4D32AA005C8EDA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5D10F4D0262005C8EDA /* FMResultSet.m */; };
+		E23DB8AE0F4D32AA005C8EDA /* AdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A10F4D0262005C8EDA /* AdMobHelper.m */; };
+		E23DB8AF0F4D32AA005C8EDA /* MVOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A50F4D0262005C8EDA /* MVOption.m */; };
+		E23DB8B00F4D32AA005C8EDA /* MVP2.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A90F4D0262005C8EDA /* MVP2.m */; };
+		E23DB8B10F4D32AA005C8EDA /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6AC0F4D0262005C8EDA /* NSString+File.m */; };
+		E23DB8B20F4D32AA005C8EDA /* MVHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6B20F4D0262005C8EDA /* MVHttp.m */; };
+		E23DB8B30F4D32AA005C8EDA /* ThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */; };
+		E23DB8B40F4D32AA005C8EDA /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */; };
+		E23DB8B60F4D32AA005C8EDA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		E23DB8BE0F4D32E0005C8EDA /* MVOptionUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6BF0F4D0263005C8EDA /* MVOptionUnitTest.m */; };
+		E23DB8CD0F4D33A4005C8EDA /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB65A0F4D0262005C8EDA /* GTMIPhoneUnitTestDelegate.m */; };
+		E23DB8CE0F4D33A4005C8EDA /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB65B0F4D0262005C8EDA /* GTMIPhoneUnitTestMain.m */; };
+		E23DB8CF0F4D33A4005C8EDA /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6610F4D0262005C8EDA /* GTMSenTestCase.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E23DB8C40F4D3325005C8EDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D /* motive */;
+			remoteInfo = motive;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -93,7 +121,7 @@
 		E23DB8430F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+Motive.h"; sourceTree = "<group>"; };
 		E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+Motive.m"; sourceTree = "<group>"; };
 		E23DB8490F4D2E36005C8EDA /* MVMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMacros.h; sourceTree = "<group>"; };
-		E23DB86F0F4D3032005C8EDA /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		E23DB8BA0F4D32AA005C8EDA /* libmotive-tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmotive-tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +133,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E23DB8B50F4D32AA005C8EDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23DB8B60F4D32AA005C8EDA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AAC07E0554694100DB518D /* libmotive.a */,
+				E23DB8BA0F4D32AA005C8EDA /* libmotive-tests.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,7 +159,6 @@
 				4784B29E0F368E2E00D331F4 /* Source */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				E23DB86F0F4D3032005C8EDA /* Tests-Info.plist */,
 			);
 			name = motive;
 			sourceTree = "<group>";
@@ -399,6 +435,24 @@
 			productReference = D2AAC07E0554694100DB518D /* libmotive.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		E23DB88E0F4D32AA005C8EDA /* Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23DB8B70F4D32AA005C8EDA /* Build configuration list for PBXNativeTarget "Unit Tests" */;
+			buildPhases = (
+				E23DB8A70F4D32AA005C8EDA /* Sources */,
+				E23DB8B50F4D32AA005C8EDA /* Frameworks */,
+				E23DB8BC0F4D32B7005C8EDA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E23DB8C50F4D3325005C8EDA /* PBXTargetDependency */,
+			);
+			name = "Unit Tests";
+			productName = motive;
+			productReference = E23DB8BA0F4D32AA005C8EDA /* libmotive-tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -413,9 +467,26 @@
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* motive */,
+				E23DB88E0F4D32AA005C8EDA /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E23DB8BC0F4D32B7005C8EDA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "Source/External/google-toolbox-for-mac-1-5-1/UnitTesting/RunIPhoneUnitTest.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2AAC07B0554694100DB518D /* Sources */ = {
@@ -438,7 +509,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E23DB8A70F4D32AA005C8EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23DB8CD0F4D33A4005C8EDA /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				E23DB8CE0F4D33A4005C8EDA /* GTMIPhoneUnitTestMain.m in Sources */,
+				E23DB8CF0F4D33A4005C8EDA /* GTMSenTestCase.m in Sources */,
+				E23DB8BE0F4D32E0005C8EDA /* MVOptionUnitTest.m in Sources */,
+				E23DB8A80F4D32AA005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */,
+				E23DB8A90F4D32AA005C8EDA /* NSData+CocoaDevUsersAdditions.m in Sources */,
+				E23DB8AA0F4D32AA005C8EDA /* NSSet+CocoaDevUsersAdditions.m in Sources */,
+				E23DB8AB0F4D32AA005C8EDA /* FMDatabase.m in Sources */,
+				E23DB8AC0F4D32AA005C8EDA /* FMDatabaseAdditions.m in Sources */,
+				E23DB8AD0F4D32AA005C8EDA /* FMResultSet.m in Sources */,
+				E23DB8AE0F4D32AA005C8EDA /* AdMobHelper.m in Sources */,
+				E23DB8AF0F4D32AA005C8EDA /* MVOption.m in Sources */,
+				E23DB8B00F4D32AA005C8EDA /* MVP2.m in Sources */,
+				E23DB8B10F4D32AA005C8EDA /* NSString+File.m in Sources */,
+				E23DB8B20F4D32AA005C8EDA /* MVHttp.m in Sources */,
+				E23DB8B30F4D32AA005C8EDA /* ThreadUtil.m in Sources */,
+				E23DB8B40F4D32AA005C8EDA /* AVAudioPlayer+Motive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E23DB8C50F4D3325005C8EDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* motive */;
+			targetProxy = E23DB8C40F4D3325005C8EDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
@@ -507,6 +610,46 @@
 			};
 			name = Release;
 		};
+		E23DB8B80F4D32AA005C8EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Source/External/google-toolbox-for-mac-1-5-1/GTM_Prefix.pch";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/Source/External/google-toolbox-for-mac-1-5-1/TigerGcov\\\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "motive-tests";
+			};
+			name = Debug;
+		};
+		E23DB8B90F4D32AA005C8EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Source/External/google-toolbox-for-mac-1-5-1/GTM_Prefix.pch";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/Source/External/google-toolbox-for-mac-1-5-1/TigerGcov\\\"",
+				);
+				PRODUCT_NAME = "motive-tests";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -524,6 +667,15 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23DB8B70F4D32AA005C8EDA /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23DB8B80F4D32AA005C8EDA /* Debug */,
+				E23DB8B90F4D32AA005C8EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
