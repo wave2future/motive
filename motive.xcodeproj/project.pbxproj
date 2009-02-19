@@ -41,6 +41,9 @@
 		E23DB75C0F4D0263005C8EDA /* MVHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6B20F4D0262005C8EDA /* MVHttp.m */; };
 		E23DB7660F4D0263005C8EDA /* ThreadUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6C30F4D0263005C8EDA /* ThreadUtil.h */; };
 		E23DB7670F4D0263005C8EDA /* ThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */; };
+		E23DB8450F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB8430F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h */; };
+		E23DB8460F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */; };
+		E23DB84A0F4D2E36005C8EDA /* MVMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB8490F4D2E36005C8EDA /* MVMacros.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +90,10 @@
 		E23DB6BF0F4D0263005C8EDA /* MVOptionUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVOptionUnitTest.m; sourceTree = "<group>"; };
 		E23DB6C30F4D0263005C8EDA /* ThreadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadUtil.h; sourceTree = "<group>"; };
 		E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadUtil.m; sourceTree = "<group>"; };
+		E23DB8430F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+Motive.h"; sourceTree = "<group>"; };
+		E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+Motive.m"; sourceTree = "<group>"; };
+		E23DB8490F4D2E36005C8EDA /* MVMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMacros.h; sourceTree = "<group>"; };
+		E23DB86F0F4D3032005C8EDA /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +122,7 @@
 				4784B29E0F368E2E00D331F4 /* Source */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				E23DB86F0F4D3032005C8EDA /* Tests-Info.plist */,
 			);
 			name = motive;
 			sourceTree = "<group>";
@@ -236,6 +244,7 @@
 		E23DB69E0F4D0262005C8EDA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E23DB8420F4D2E2D005C8EDA /* AV */,
 				E23DB69F0F4D0262005C8EDA /* AdMob */,
 				E23DB6A20F4D0262005C8EDA /* FObj */,
 				E23DB6AA0F4D0262005C8EDA /* IO */,
@@ -243,6 +252,7 @@
 				E23DB6AD0F4D0262005C8EDA /* Motive.h */,
 				E23DB6AE0F4D0262005C8EDA /* motive_Prefix.pch */,
 				E23DB6AF0F4D0262005C8EDA /* MVLog.h */,
+				E23DB8490F4D2E36005C8EDA /* MVMacros.h */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -297,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				E23DB6BD0F4D0263005C8EDA /* Data */,
+				E23DB7C20F4D1AB6005C8EDA /* Network */,
 				E23DB6C20F4D0263005C8EDA /* Process */,
 			);
 			path = Test;
@@ -317,6 +328,22 @@
 				E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */,
 			);
 			path = Process;
+			sourceTree = "<group>";
+		};
+		E23DB7C20F4D1AB6005C8EDA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E23DB8420F4D2E2D005C8EDA /* AV */ = {
+			isa = PBXGroup;
+			children = (
+				E23DB8430F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h */,
+				E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */,
+			);
+			path = AV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +374,8 @@
 				E23DB75A0F4D0263005C8EDA /* MVLog.h in Headers */,
 				E23DB75B0F4D0263005C8EDA /* MVHttp.h in Headers */,
 				E23DB7660F4D0263005C8EDA /* ThreadUtil.h in Headers */,
+				E23DB8450F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h in Headers */,
+				E23DB84A0F4D2E36005C8EDA /* MVMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +434,7 @@
 				E23DB7570F4D0263005C8EDA /* NSString+File.m in Sources */,
 				E23DB75C0F4D0263005C8EDA /* MVHttp.m in Sources */,
 				E23DB7670F4D0263005C8EDA /* ThreadUtil.m in Sources */,
+				E23DB8460F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
