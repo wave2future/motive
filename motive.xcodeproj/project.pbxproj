@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2AAC088055469A000DB518D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		E23DB6C70F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */; };
 		E23DB6C80F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */; };
 		E23DB6C90F4D0263005C8EDA /* NSData+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C70F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.h */; };
@@ -44,42 +43,27 @@
 		E23DB8450F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB8430F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h */; };
 		E23DB8460F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */; };
 		E23DB84A0F4D2E36005C8EDA /* MVMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB8490F4D2E36005C8EDA /* MVMacros.h */; };
-		E23DB8A80F4D32AA005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */; };
-		E23DB8A90F4D32AA005C8EDA /* NSData+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C80F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.m */; };
-		E23DB8AA0F4D32AA005C8EDA /* NSSet+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5CA0F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.m */; };
-		E23DB8AB0F4D32AA005C8EDA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5CD0F4D0262005C8EDA /* FMDatabase.m */; };
-		E23DB8AC0F4D32AA005C8EDA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5CF0F4D0262005C8EDA /* FMDatabaseAdditions.m */; };
-		E23DB8AD0F4D32AA005C8EDA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5D10F4D0262005C8EDA /* FMResultSet.m */; };
-		E23DB8AE0F4D32AA005C8EDA /* AdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A10F4D0262005C8EDA /* AdMobHelper.m */; };
-		E23DB8AF0F4D32AA005C8EDA /* MVOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A50F4D0262005C8EDA /* MVOption.m */; };
-		E23DB8B00F4D32AA005C8EDA /* MVP2.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A90F4D0262005C8EDA /* MVP2.m */; };
-		E23DB8B10F4D32AA005C8EDA /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6AC0F4D0262005C8EDA /* NSString+File.m */; };
-		E23DB8B20F4D32AA005C8EDA /* MVHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6B20F4D0262005C8EDA /* MVHttp.m */; };
-		E23DB8B30F4D32AA005C8EDA /* ThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */; };
-		E23DB8B40F4D32AA005C8EDA /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */; };
-		E23DB8B60F4D32AA005C8EDA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
-		E23DB8BE0F4D32E0005C8EDA /* MVOptionUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6BF0F4D0263005C8EDA /* MVOptionUnitTest.m */; };
-		E23DB8CD0F4D33A4005C8EDA /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB65A0F4D0262005C8EDA /* GTMIPhoneUnitTestDelegate.m */; };
-		E23DB8CE0F4D33A4005C8EDA /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB65B0F4D0262005C8EDA /* GTMIPhoneUnitTestMain.m */; };
-		E23DB8CF0F4D33A4005C8EDA /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6610F4D0262005C8EDA /* GTMSenTestCase.m */; };
+		E23DBE8A0F4E25E1005C8EDA /* MVOptionUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6BF0F4D0263005C8EDA /* MVOptionUnitTest.m */; };
+		E23DBE8F0F4E25F3005C8EDA /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB65A0F4D0262005C8EDA /* GTMIPhoneUnitTestDelegate.m */; };
+		E23DBE900F4E25F3005C8EDA /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB65B0F4D0262005C8EDA /* GTMIPhoneUnitTestMain.m */; };
+		E23DBE910F4E25F3005C8EDA /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6610F4D0262005C8EDA /* GTMSenTestCase.m */; };
+		E23DBEAC0F4E26DF005C8EDA /* ThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */; };
+		E23DBF6A0F4E2800005C8EDA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23DBF690F4E2800005C8EDA /* AVFoundation.framework */; };
+		E23DBF6B0F4E2800005C8EDA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23DBF690F4E2800005C8EDA /* AVFoundation.framework */; };
+		E23DBF6D0F4E2817005C8EDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23DBF6C0F4E2817005C8EDA /* UIKit.framework */; };
+		E23DBF6E0F4E2817005C8EDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23DBF6C0F4E2817005C8EDA /* UIKit.framework */; };
+		E23DC0050F4E2852005C8EDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		E23DC00B0F4E296B005C8EDA /* AdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A10F4D0262005C8EDA /* AdMobHelper.m */; };
+		E23DC00C0F4E296B005C8EDA /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */; };
+		E23DC00D0F4E296B005C8EDA /* MVHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6B20F4D0262005C8EDA /* MVHttp.m */; };
+		E23DC00E0F4E296B005C8EDA /* MVOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A50F4D0262005C8EDA /* MVOption.m */; };
+		E23DC00F0F4E296B005C8EDA /* MVP2.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A90F4D0262005C8EDA /* MVP2.m */; };
+		E23DC0100F4E296B005C8EDA /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6AC0F4D0262005C8EDA /* NSString+File.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E23DB8C40F4D3325005C8EDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* motive */;
-			remoteInfo = motive;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2F7E8BE07B2D77200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
 		E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
 		E23DB5C70F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
@@ -121,7 +105,9 @@
 		E23DB8430F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+Motive.h"; sourceTree = "<group>"; };
 		E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+Motive.m"; sourceTree = "<group>"; };
 		E23DB8490F4D2E36005C8EDA /* MVMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMacros.h; sourceTree = "<group>"; };
-		E23DB8BA0F4D32AA005C8EDA /* libmotive-tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmotive-tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23DBE720F4E2549005C8EDA /* Unit Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23DBF690F4E2800005C8EDA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E23DBF6C0F4E2817005C8EDA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,15 +115,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2AAC088055469A000DB518D /* Cocoa.framework in Frameworks */,
+				E23DBF6A0F4E2800005C8EDA /* AVFoundation.framework in Frameworks */,
+				E23DBF6D0F4E2817005C8EDA /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E23DB8B50F4D32AA005C8EDA /* Frameworks */ = {
+		E23DBE700F4E2549005C8EDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23DB8B60F4D32AA005C8EDA /* Cocoa.framework in Frameworks */,
+				E23DBF6B0F4E2800005C8EDA /* AVFoundation.framework in Frameworks */,
+				E23DBF6E0F4E2817005C8EDA /* UIKit.framework in Frameworks */,
+				E23DC0050F4E2852005C8EDA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AAC07E0554694100DB518D /* libmotive.a */,
-				E23DB8BA0F4D32AA005C8EDA /* libmotive-tests.a */,
+				E23DBE720F4E2549005C8EDA /* Unit Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,7 +164,6 @@
 		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -183,8 +171,8 @@
 		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
-				D2F7E8BE07B2D77200F64583 /* CoreData.framework */,
+				E23DBF6C0F4E2817005C8EDA /* UIKit.framework */,
+				E23DBF690F4E2800005C8EDA /* AVFoundation.framework */,
 				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
@@ -435,23 +423,23 @@
 			productReference = D2AAC07E0554694100DB518D /* libmotive.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E23DB88E0F4D32AA005C8EDA /* Unit Tests */ = {
+		E23DBE710F4E2549005C8EDA /* Unit Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E23DB8B70F4D32AA005C8EDA /* Build configuration list for PBXNativeTarget "Unit Tests" */;
+			buildConfigurationList = E23DBE770F4E254A005C8EDA /* Build configuration list for PBXNativeTarget "Unit Tests" */;
 			buildPhases = (
-				E23DB8A70F4D32AA005C8EDA /* Sources */,
-				E23DB8B50F4D32AA005C8EDA /* Frameworks */,
-				E23DB8BC0F4D32B7005C8EDA /* ShellScript */,
+				E23DBE6E0F4E2549005C8EDA /* Resources */,
+				E23DBE6F0F4E2549005C8EDA /* Sources */,
+				E23DBE700F4E2549005C8EDA /* Frameworks */,
+				E23DBE7F0F4E25A0005C8EDA /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E23DB8C50F4D3325005C8EDA /* PBXTargetDependency */,
 			);
 			name = "Unit Tests";
-			productName = motive;
-			productReference = E23DB8BA0F4D32AA005C8EDA /* libmotive-tests.a */;
-			productType = "com.apple.product-type.library.static";
+			productName = "Unit Tests";
+			productReference = E23DBE720F4E2549005C8EDA /* Unit Tests.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -467,13 +455,23 @@
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* motive */,
-				E23DB88E0F4D32AA005C8EDA /* Unit Tests */,
+				E23DBE710F4E2549005C8EDA /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E23DBE6E0F4E2549005C8EDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		E23DB8BC0F4D32B7005C8EDA /* ShellScript */ = {
+		E23DBE7F0F4E25A0005C8EDA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -493,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23DB8460F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m in Sources */,
 				E23DB6C80F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */,
 				E23DB6CA0F4D0263005C8EDA /* NSData+CocoaDevUsersAdditions.m in Sources */,
 				E23DB6CC0F4D0263005C8EDA /* NSSet+CocoaDevUsersAdditions.m in Sources */,
@@ -505,43 +504,28 @@
 				E23DB7570F4D0263005C8EDA /* NSString+File.m in Sources */,
 				E23DB75C0F4D0263005C8EDA /* MVHttp.m in Sources */,
 				E23DB7670F4D0263005C8EDA /* ThreadUtil.m in Sources */,
-				E23DB8460F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E23DB8A70F4D32AA005C8EDA /* Sources */ = {
+		E23DBE6F0F4E2549005C8EDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23DB8CD0F4D33A4005C8EDA /* GTMIPhoneUnitTestDelegate.m in Sources */,
-				E23DB8CE0F4D33A4005C8EDA /* GTMIPhoneUnitTestMain.m in Sources */,
-				E23DB8CF0F4D33A4005C8EDA /* GTMSenTestCase.m in Sources */,
-				E23DB8BE0F4D32E0005C8EDA /* MVOptionUnitTest.m in Sources */,
-				E23DB8A80F4D32AA005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */,
-				E23DB8A90F4D32AA005C8EDA /* NSData+CocoaDevUsersAdditions.m in Sources */,
-				E23DB8AA0F4D32AA005C8EDA /* NSSet+CocoaDevUsersAdditions.m in Sources */,
-				E23DB8AB0F4D32AA005C8EDA /* FMDatabase.m in Sources */,
-				E23DB8AC0F4D32AA005C8EDA /* FMDatabaseAdditions.m in Sources */,
-				E23DB8AD0F4D32AA005C8EDA /* FMResultSet.m in Sources */,
-				E23DB8AE0F4D32AA005C8EDA /* AdMobHelper.m in Sources */,
-				E23DB8AF0F4D32AA005C8EDA /* MVOption.m in Sources */,
-				E23DB8B00F4D32AA005C8EDA /* MVP2.m in Sources */,
-				E23DB8B10F4D32AA005C8EDA /* NSString+File.m in Sources */,
-				E23DB8B20F4D32AA005C8EDA /* MVHttp.m in Sources */,
-				E23DB8B30F4D32AA005C8EDA /* ThreadUtil.m in Sources */,
-				E23DB8B40F4D32AA005C8EDA /* AVAudioPlayer+Motive.m in Sources */,
+				E23DC00B0F4E296B005C8EDA /* AdMobHelper.m in Sources */,
+				E23DC00C0F4E296B005C8EDA /* AVAudioPlayer+Motive.m in Sources */,
+				E23DC00D0F4E296B005C8EDA /* MVHttp.m in Sources */,
+				E23DC00E0F4E296B005C8EDA /* MVOption.m in Sources */,
+				E23DC00F0F4E296B005C8EDA /* MVP2.m in Sources */,
+				E23DC0100F4E296B005C8EDA /* NSString+File.m in Sources */,
+				E23DBEAC0F4E26DF005C8EDA /* ThreadUtil.m in Sources */,
+				E23DBE8A0F4E25E1005C8EDA /* MVOptionUnitTest.m in Sources */,
+				E23DBE8F0F4E25F3005C8EDA /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				E23DBE900F4E25F3005C8EDA /* GTMIPhoneUnitTestMain.m in Sources */,
+				E23DBE910F4E25F3005C8EDA /* GTMSenTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E23DB8C50F4D3325005C8EDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2AAC07D0554694100DB518D /* motive */;
-			targetProxy = E23DB8C40F4D3325005C8EDA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
@@ -610,43 +594,50 @@
 			};
 			name = Release;
 		};
-		E23DB8B80F4D32AA005C8EDA /* Debug */ = {
+		E23DBE750F4E254A005C8EDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Source/External/google-toolbox-for-mac-1-5-1/GTM_Prefix.pch";
-				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\\\"$(SRCROOT)/Source/External/google-toolbox-for-mac-1-5-1/TigerGcov\\\"",
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
 				);
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "motive-tests";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Unit Tests";
+				SDKROOT = iphoneos2.2.1;
 			};
 			name = Debug;
 		};
-		E23DB8B90F4D32AA005C8EDA /* Release */ = {
+		E23DBE760F4E254A005C8EDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_MODEL_TUNING = G5;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Source/External/google-toolbox-for-mac-1-5-1/GTM_Prefix.pch";
-				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\\\"$(SRCROOT)/Source/External/google-toolbox-for-mac-1-5-1/TigerGcov\\\"",
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
 				);
-				PRODUCT_NAME = "motive-tests";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Unit Tests";
+				SDKROOT = iphoneos2.2.1;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -671,11 +662,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E23DB8B70F4D32AA005C8EDA /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
+		E23DBE770F4E254A005C8EDA /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E23DB8B80F4D32AA005C8EDA /* Debug */,
-				E23DB8B90F4D32AA005C8EDA /* Release */,
+				E23DBE750F4E254A005C8EDA /* Debug */,
+				E23DBE760F4E254A005C8EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
