@@ -3,7 +3,9 @@
 @implementation AVAudioPlayer (AVAudioPlayerMotive)
 
 + (AVAudioPlayer *)audioPlayerForResource:(NSString *)resource {
-	return [[[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:resource ofType:nil]] error:NULL] autorelease];
+	NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:resource ofType:nil]];
+	return [[[AVAudioPlayer alloc] initWithContentsOfURL:url error:NULL] autorelease];
+	
 }
 
 @end
