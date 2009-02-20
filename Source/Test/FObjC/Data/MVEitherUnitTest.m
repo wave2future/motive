@@ -1,39 +1,36 @@
-// (c) Xumii, All Rights Reserved
-
-#import <OCMock/OCMock.h>
 #import "GTMSenTestCase.h"
-#import "XIEither.h"
+#import "MVEither.h"
 
-@interface XIEitherUnitTest : GTMTestCase {
+@interface MVEitherUnitTest : GTMTestCase {
     NSObject *object;
 }
 @end
 
-@implementation XIEitherUnitTest
+@implementation MVEitherUnitTest
 
 - (void)setUp {
     object = [[[NSObject alloc] init] autorelease];
 }
 
 - (void)testALeftIsLeft {
-    XIEither *left = [XIEither leftWithObject:object];
+    MVEither *left = [MVEither leftWithObject:object];
     STAssertTrue([left isLeft], nil);
     STAssertFalse([left isRight], nil);
 }
 
 - (void)testARightIsRight {
-    XIEither *right = [XIEither rightWithObject:object];
+    MVEither *right = [MVEither rightWithObject:object];
     STAssertTrue([right isRight], nil);
     STAssertFalse([right isLeft], nil);
 }
 
-- (void)testALeftHoldsAValue {
-    XIEither *left = [XIEither leftWithObject:object];
+- (void)testALeftCanHoldAValue {
+    MVEither *left = [MVEither leftWithObject:object];
     STAssertEqualObjects(object, [left value], nil);
 }
 
-- (void)testARightHoldsAValue {
-    XIEither *right = [XIEither rightWithObject:object];
+- (void)testARightCanHoldAValue {
+    MVEither *right = [MVEither rightWithObject:object];
     STAssertEqualObjects(object, [right value], nil);
 }
 

@@ -27,10 +27,6 @@
 		E23DB73F0F4D0263005C8EDA /* GTMSenTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6600F4D0262005C8EDA /* GTMSenTestCase.h */; };
 		E23DB74E0F4D0263005C8EDA /* AdMobHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6A00F4D0262005C8EDA /* AdMobHelper.h */; };
 		E23DB74F0F4D0263005C8EDA /* AdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A10F4D0262005C8EDA /* AdMobHelper.m */; };
-		E23DB7500F4D0263005C8EDA /* MVOption.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6A40F4D0262005C8EDA /* MVOption.h */; };
-		E23DB7510F4D0263005C8EDA /* MVOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A50F4D0262005C8EDA /* MVOption.m */; };
-		E23DB7540F4D0263005C8EDA /* MVP2.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6A80F4D0262005C8EDA /* MVP2.h */; };
-		E23DB7550F4D0263005C8EDA /* MVP2.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A90F4D0262005C8EDA /* MVP2.m */; };
 		E23DB7560F4D0263005C8EDA /* NSString+File.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6AB0F4D0262005C8EDA /* NSString+File.h */; };
 		E23DB7570F4D0263005C8EDA /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6AC0F4D0262005C8EDA /* NSString+File.m */; };
 		E23DB7580F4D0263005C8EDA /* Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6AD0F4D0262005C8EDA /* Motive.h */; };
@@ -43,7 +39,6 @@
 		E23DB8450F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB8430F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h */; };
 		E23DB8460F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */; };
 		E23DB84A0F4D2E36005C8EDA /* MVMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB8490F4D2E36005C8EDA /* MVMacros.h */; };
-		E23DBE8A0F4E25E1005C8EDA /* MVOptionUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6BF0F4D0263005C8EDA /* MVOptionUnitTest.m */; };
 		E23DBE8F0F4E25F3005C8EDA /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB65A0F4D0262005C8EDA /* GTMIPhoneUnitTestDelegate.m */; };
 		E23DBE900F4E25F3005C8EDA /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB65B0F4D0262005C8EDA /* GTMIPhoneUnitTestMain.m */; };
 		E23DBE910F4E25F3005C8EDA /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6610F4D0262005C8EDA /* GTMSenTestCase.m */; };
@@ -56,10 +51,19 @@
 		E23DC00B0F4E296B005C8EDA /* AdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A10F4D0262005C8EDA /* AdMobHelper.m */; };
 		E23DC00C0F4E296B005C8EDA /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB8440F4D2E2D005C8EDA /* AVAudioPlayer+Motive.m */; };
 		E23DC00D0F4E296B005C8EDA /* MVHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6B20F4D0262005C8EDA /* MVHttp.m */; };
-		E23DC00E0F4E296B005C8EDA /* MVOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A50F4D0262005C8EDA /* MVOption.m */; };
-		E23DC00F0F4E296B005C8EDA /* MVP2.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A90F4D0262005C8EDA /* MVP2.m */; };
 		E23DC0100F4E296B005C8EDA /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6AC0F4D0262005C8EDA /* NSString+File.m */; };
 		E23DC0230F4E2AAD005C8EDA /* MVHttpUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DC0220F4E2AAD005C8EDA /* MVHttpUnitTest.m */; };
+		E2F762ED0F4E58FB00D850CB /* MVEither.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762E80F4E58FB00D850CB /* MVEither.m */; };
+		E2F762EE0F4E58FB00D850CB /* MVOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762EA0F4E58FB00D850CB /* MVOption.m */; };
+		E2F762EF0F4E58FB00D850CB /* MVP2.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762EC0F4E58FB00D850CB /* MVP2.m */; };
+		E2F762F00F4E58FB00D850CB /* MVEither.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F762E70F4E58FB00D850CB /* MVEither.h */; };
+		E2F762F10F4E58FB00D850CB /* MVEither.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762E80F4E58FB00D850CB /* MVEither.m */; };
+		E2F762F20F4E58FB00D850CB /* MVOption.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F762E90F4E58FB00D850CB /* MVOption.h */; };
+		E2F762F30F4E58FB00D850CB /* MVOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762EA0F4E58FB00D850CB /* MVOption.m */; };
+		E2F762F40F4E58FB00D850CB /* MVP2.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F762EB0F4E58FB00D850CB /* MVP2.h */; };
+		E2F762F50F4E58FB00D850CB /* MVP2.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762EC0F4E58FB00D850CB /* MVP2.m */; };
+		E2F762FA0F4E593700D850CB /* MVEitherUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762F80F4E593700D850CB /* MVEitherUnitTest.m */; };
+		E2F762FB0F4E593700D850CB /* MVOptionUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762F90F4E593700D850CB /* MVOptionUnitTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,10 +93,6 @@
 		E23DB6610F4D0262005C8EDA /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
 		E23DB6A00F4D0262005C8EDA /* AdMobHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobHelper.h; sourceTree = "<group>"; };
 		E23DB6A10F4D0262005C8EDA /* AdMobHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMobHelper.m; sourceTree = "<group>"; };
-		E23DB6A40F4D0262005C8EDA /* MVOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVOption.h; sourceTree = "<group>"; };
-		E23DB6A50F4D0262005C8EDA /* MVOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVOption.m; sourceTree = "<group>"; };
-		E23DB6A80F4D0262005C8EDA /* MVP2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVP2.h; sourceTree = "<group>"; };
-		E23DB6A90F4D0262005C8EDA /* MVP2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVP2.m; sourceTree = "<group>"; };
 		E23DB6AB0F4D0262005C8EDA /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
 		E23DB6AC0F4D0262005C8EDA /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
 		E23DB6AD0F4D0262005C8EDA /* Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motive.h; sourceTree = "<group>"; };
@@ -100,7 +100,6 @@
 		E23DB6AF0F4D0262005C8EDA /* MVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLog.h; sourceTree = "<group>"; };
 		E23DB6B10F4D0262005C8EDA /* MVHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVHttp.h; sourceTree = "<group>"; };
 		E23DB6B20F4D0262005C8EDA /* MVHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVHttp.m; sourceTree = "<group>"; };
-		E23DB6BF0F4D0263005C8EDA /* MVOptionUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVOptionUnitTest.m; sourceTree = "<group>"; };
 		E23DB6C30F4D0263005C8EDA /* ThreadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadUtil.h; sourceTree = "<group>"; };
 		E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadUtil.m; sourceTree = "<group>"; };
 		E23DB8430F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+Motive.h"; sourceTree = "<group>"; };
@@ -110,6 +109,14 @@
 		E23DBF690F4E2800005C8EDA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E23DBF6C0F4E2817005C8EDA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E23DC0220F4E2AAD005C8EDA /* MVHttpUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVHttpUnitTest.m; sourceTree = "<group>"; };
+		E2F762E70F4E58FB00D850CB /* MVEither.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVEither.h; sourceTree = "<group>"; };
+		E2F762E80F4E58FB00D850CB /* MVEither.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVEither.m; sourceTree = "<group>"; };
+		E2F762E90F4E58FB00D850CB /* MVOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVOption.h; sourceTree = "<group>"; };
+		E2F762EA0F4E58FB00D850CB /* MVOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVOption.m; sourceTree = "<group>"; };
+		E2F762EB0F4E58FB00D850CB /* MVP2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVP2.h; sourceTree = "<group>"; };
+		E2F762EC0F4E58FB00D850CB /* MVP2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVP2.m; sourceTree = "<group>"; };
+		E2F762F80F4E593700D850CB /* MVEitherUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVEitherUnitTest.m; sourceTree = "<group>"; };
+		E2F762F90F4E593700D850CB /* MVOptionUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVOptionUnitTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,9 +261,9 @@
 		E23DB69E0F4D0262005C8EDA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				E23DB8420F4D2E2D005C8EDA /* AV */,
 				E23DB69F0F4D0262005C8EDA /* AdMob */,
-				E23DB6A20F4D0262005C8EDA /* FObj */,
+				E23DB8420F4D2E2D005C8EDA /* AV */,
+				E2F762E50F4E58FB00D850CB /* FObjC */,
 				E23DB6AA0F4D0262005C8EDA /* IO */,
 				E23DB6B00F4D0262005C8EDA /* Network */,
 				E23DB6AD0F4D0262005C8EDA /* Motive.h */,
@@ -274,25 +281,6 @@
 				E23DB6A10F4D0262005C8EDA /* AdMobHelper.m */,
 			);
 			path = AdMob;
-			sourceTree = "<group>";
-		};
-		E23DB6A20F4D0262005C8EDA /* FObj */ = {
-			isa = PBXGroup;
-			children = (
-				E23DB6A30F4D0262005C8EDA /* Data */,
-				E23DB6A80F4D0262005C8EDA /* MVP2.h */,
-				E23DB6A90F4D0262005C8EDA /* MVP2.m */,
-			);
-			path = FObj;
-			sourceTree = "<group>";
-		};
-		E23DB6A30F4D0262005C8EDA /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				E23DB6A40F4D0262005C8EDA /* MVOption.h */,
-				E23DB6A50F4D0262005C8EDA /* MVOption.m */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		E23DB6AA0F4D0262005C8EDA /* IO */ = {
@@ -316,19 +304,11 @@
 		E23DB6BC0F4D0263005C8EDA /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				E23DB6BD0F4D0263005C8EDA /* Data */,
+				E2F762F60F4E593700D850CB /* FObjC */,
 				E23DB7C20F4D1AB6005C8EDA /* Network */,
 				E23DB6C20F4D0263005C8EDA /* Process */,
 			);
 			path = Test;
-			sourceTree = "<group>";
-		};
-		E23DB6BD0F4D0263005C8EDA /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				E23DB6BF0F4D0263005C8EDA /* MVOptionUnitTest.m */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		E23DB6C20F4D0263005C8EDA /* Process */ = {
@@ -357,6 +337,44 @@
 			path = AV;
 			sourceTree = "<group>";
 		};
+		E2F762E50F4E58FB00D850CB /* FObjC */ = {
+			isa = PBXGroup;
+			children = (
+				E2F762E60F4E58FB00D850CB /* Data */,
+				E2F762EB0F4E58FB00D850CB /* MVP2.h */,
+				E2F762EC0F4E58FB00D850CB /* MVP2.m */,
+			);
+			path = FObjC;
+			sourceTree = "<group>";
+		};
+		E2F762E60F4E58FB00D850CB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E2F762E70F4E58FB00D850CB /* MVEither.h */,
+				E2F762E80F4E58FB00D850CB /* MVEither.m */,
+				E2F762E90F4E58FB00D850CB /* MVOption.h */,
+				E2F762EA0F4E58FB00D850CB /* MVOption.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E2F762F60F4E593700D850CB /* FObjC */ = {
+			isa = PBXGroup;
+			children = (
+				E2F762F70F4E593700D850CB /* Data */,
+			);
+			path = FObjC;
+			sourceTree = "<group>";
+		};
+		E2F762F70F4E593700D850CB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E2F762F80F4E593700D850CB /* MVEitherUnitTest.m */,
+				E2F762F90F4E593700D850CB /* MVOptionUnitTest.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -377,8 +395,6 @@
 				E23DB7380F4D0263005C8EDA /* GTMIPhoneUnitTestDelegate.h in Headers */,
 				E23DB73F0F4D0263005C8EDA /* GTMSenTestCase.h in Headers */,
 				E23DB74E0F4D0263005C8EDA /* AdMobHelper.h in Headers */,
-				E23DB7500F4D0263005C8EDA /* MVOption.h in Headers */,
-				E23DB7540F4D0263005C8EDA /* MVP2.h in Headers */,
 				E23DB7560F4D0263005C8EDA /* NSString+File.h in Headers */,
 				E23DB7580F4D0263005C8EDA /* Motive.h in Headers */,
 				E23DB7590F4D0263005C8EDA /* motive_Prefix.pch in Headers */,
@@ -387,6 +403,9 @@
 				E23DB7660F4D0263005C8EDA /* ThreadUtil.h in Headers */,
 				E23DB8450F4D2E2D005C8EDA /* AVAudioPlayer+Motive.h in Headers */,
 				E23DB84A0F4D2E36005C8EDA /* MVMacros.h in Headers */,
+				E2F762F00F4E58FB00D850CB /* MVEither.h in Headers */,
+				E2F762F20F4E58FB00D850CB /* MVOption.h in Headers */,
+				E2F762F40F4E58FB00D850CB /* MVP2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,11 +505,12 @@
 				E23DB6D00F4D0263005C8EDA /* FMDatabaseAdditions.m in Sources */,
 				E23DB6D20F4D0263005C8EDA /* FMResultSet.m in Sources */,
 				E23DB74F0F4D0263005C8EDA /* AdMobHelper.m in Sources */,
-				E23DB7510F4D0263005C8EDA /* MVOption.m in Sources */,
-				E23DB7550F4D0263005C8EDA /* MVP2.m in Sources */,
 				E23DB7570F4D0263005C8EDA /* NSString+File.m in Sources */,
 				E23DB75C0F4D0263005C8EDA /* MVHttp.m in Sources */,
 				E23DB7670F4D0263005C8EDA /* ThreadUtil.m in Sources */,
+				E2F762F10F4E58FB00D850CB /* MVEither.m in Sources */,
+				E2F762F30F4E58FB00D850CB /* MVOption.m in Sources */,
+				E2F762F50F4E58FB00D850CB /* MVP2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,14 +522,16 @@
 				E23DC00C0F4E296B005C8EDA /* AVAudioPlayer+Motive.m in Sources */,
 				E23DC00D0F4E296B005C8EDA /* MVHttp.m in Sources */,
 				E23DC0230F4E2AAD005C8EDA /* MVHttpUnitTest.m in Sources */,
-				E23DC00E0F4E296B005C8EDA /* MVOption.m in Sources */,
-				E23DC00F0F4E296B005C8EDA /* MVP2.m in Sources */,
 				E23DC0100F4E296B005C8EDA /* NSString+File.m in Sources */,
 				E23DBEAC0F4E26DF005C8EDA /* ThreadUtil.m in Sources */,
-				E23DBE8A0F4E25E1005C8EDA /* MVOptionUnitTest.m in Sources */,
 				E23DBE8F0F4E25F3005C8EDA /* GTMIPhoneUnitTestDelegate.m in Sources */,
 				E23DBE900F4E25F3005C8EDA /* GTMIPhoneUnitTestMain.m in Sources */,
 				E23DBE910F4E25F3005C8EDA /* GTMSenTestCase.m in Sources */,
+				E2F762ED0F4E58FB00D850CB /* MVEither.m in Sources */,
+				E2F762EE0F4E58FB00D850CB /* MVOption.m in Sources */,
+				E2F762EF0F4E58FB00D850CB /* MVP2.m in Sources */,
+				E2F762FA0F4E593700D850CB /* MVEitherUnitTest.m in Sources */,
+				E2F762FB0F4E593700D850CB /* MVOptionUnitTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
