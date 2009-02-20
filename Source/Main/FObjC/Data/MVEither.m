@@ -41,7 +41,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<MVEither isLeft: %@; value: %@>", onleft ? "true" : "false", value];
+    return [NSString stringWithFormat:@"<MVEither isLeft: %@; value: %@>", onleft ? @"true" : @"false", value];
 }
 
 - (void)dealloc {
