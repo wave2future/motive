@@ -1,4 +1,5 @@
 #import "GTMSenTestCase.h"
+#import "MVHttp.h"
 
 @interface MVHttpUnitTest : GTMTestCase {
 }
@@ -7,10 +8,10 @@
 @implementation MVHttpUnitTest
 
 - (void)testEncodesADictionaryAsAQueryString {
-    NSMutableDictionary params = [NSMutableDictionary dictionary];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
     [params setValue:[NSNumber numberWithInt:1] forKey:@"foo"];
     [params setValue:@"somebar" forKey:@"bar"];
-    STAssertEqualObjects(@"", [MVHttp queryStringFromDictionary:params], nil);
+    STAssertEqualObjects(@"foo=1&bar=somebar", [MVHttp queryStringFromDictionary:params], nil);
 }
 
 @end

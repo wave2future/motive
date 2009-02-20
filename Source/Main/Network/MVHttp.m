@@ -32,4 +32,23 @@ static NSInteger MVDefaultStatusCode = 0;
     return [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
 }
 
+// TODO This is a foldL, pull it into a category on NSDictionary.
++ (NSString *)queryStringFromDictionary:(NSDictionary *)dictionary {    
+    NSMutableString *queryString = [NSMutableString stringWithCapacity:1];
+    NSArray *keys = [dictionary allKeys];
+    for (int i = 0; i < [keys count]; i++) {
+        if (i != 0) {
+            [queryString appendString:@"&"];
+        }
+        id key = [keys objectAtIndex:i];
+        [queryString appendString:[NSString stringWithFormat:@"%@=%@", key, [dictionary objectForKey:key]]];
+    }
+    
+    
+//    for (id key in [dictionary allKeys]) {
+//        [queryString appendString:[NSString stringWithFormat:@"&%@=%@", key, [dictionary objectForKey:key]]];
+//    }
+    return queryString;    
+}
+
 @end

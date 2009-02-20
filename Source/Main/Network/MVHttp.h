@@ -12,4 +12,6 @@
 	
 + (NSString *)sendSynchronousRequest:(NSURLRequest*)request returningResponse:(NSURLResponse **)response error:(NSError **)error;
 
++ (NSString *)queryStringFromDictionary:(NSDictionary *)dictionary;
+
 @end

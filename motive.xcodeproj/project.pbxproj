@@ -59,6 +59,7 @@
 		E23DC00E0F4E296B005C8EDA /* MVOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A50F4D0262005C8EDA /* MVOption.m */; };
 		E23DC00F0F4E296B005C8EDA /* MVP2.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6A90F4D0262005C8EDA /* MVP2.m */; };
 		E23DC0100F4E296B005C8EDA /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6AC0F4D0262005C8EDA /* NSString+File.m */; };
+		E23DC0230F4E2AAD005C8EDA /* MVHttpUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DC0220F4E2AAD005C8EDA /* MVHttpUnitTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,7 @@
 		E23DBE720F4E2549005C8EDA /* Unit Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23DBF690F4E2800005C8EDA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E23DBF6C0F4E2817005C8EDA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E23DC0220F4E2AAD005C8EDA /* MVHttpUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVHttpUnitTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,36 +148,20 @@
 			isa = PBXGroup;
 			children = (
 				4784B29E0F368E2E00D331F4 /* Source */,
-				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
 			name = motive;
 			sourceTree = "<group>";
 		};
-		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
-				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
-			);
-			name = "External Frameworks and Libraries";
-			sourceTree = "<group>";
-		};
-		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				E23DBF6C0F4E2817005C8EDA /* UIKit.framework */,
 				E23DBF690F4E2800005C8EDA /* AVFoundation.framework */,
 				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
 			);
-			name = "Other Frameworks";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4784B29E0F368E2E00D331F4 /* Source */ = {
@@ -357,6 +343,7 @@
 		E23DB7C20F4D1AB6005C8EDA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E23DC0220F4E2AAD005C8EDA /* MVHttpUnitTest.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -514,6 +501,7 @@
 				E23DC00B0F4E296B005C8EDA /* AdMobHelper.m in Sources */,
 				E23DC00C0F4E296B005C8EDA /* AVAudioPlayer+Motive.m in Sources */,
 				E23DC00D0F4E296B005C8EDA /* MVHttp.m in Sources */,
+				E23DC0230F4E2AAD005C8EDA /* MVHttpUnitTest.m in Sources */,
 				E23DC00E0F4E296B005C8EDA /* MVOption.m in Sources */,
 				E23DC00F0F4E296B005C8EDA /* MVP2.m in Sources */,
 				E23DC0100F4E296B005C8EDA /* NSString+File.m in Sources */,
