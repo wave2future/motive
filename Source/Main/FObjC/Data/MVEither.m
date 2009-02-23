@@ -14,6 +14,14 @@
     return [[[MVEither alloc] initWithValue:value onLeft:NO] autorelease];
 }
 
+- (MVEither *)mapLeftWithSelector:(SEL)selector {
+    return onleft ? [MVEither leftWithValue:[value performSelector:selector]] : self;
+}
+
+- (MVEither *)mapRightWithSelector:(SEL)selector {
+    return onleft ? self : [MVEither rightWithValue:[value performSelector:selector]];
+}
+
 - (BOOL)isLeft {
     return onleft;
 }

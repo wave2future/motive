@@ -24,7 +24,25 @@ static NSInteger MVDefaultStatusCode = 0;
 }
 
 + (NSInteger)statusCodeForResponse:(NSURLResponse *)response {
-	return response != nil && [response respondsToSelector:@selector(statusCode)] ? [(NSHTTPURLResponse *)response statusCode] : MVDefaultStatusCode;
+	return response != nil && [response isKindOfClass:[NSHTTPURLResponse class]] ? [((NSHTTPURLResponse *) response) statusCode] : MVDefaultStatusCode;
+}
+
++ (NSString *)stringForStatusCodeForResponse:(NSURLResponse *)response {
+    return [NSHTTPURLResponse localizedStringForStatusCode:[self statusCodeForResponse:response]];
+}
+
++ (MVEither *)sendSynchronousRequest:(NSURLRequest *)request {
+    NSURLResponse *response;
+    NSError *error;
+    NSString *content = [MVHttp sendSynchronousRequest:request returningResponse:&response error:&error];
+	if (error == nil && [MVHttp statusCodeForResponse:response] == MVHttpOkStatusCode) {
+        LOG(@"Request succeeded, raw response: %@", content);
+        return [MVEither rightWithValue:content];
+    } else {
+        LOG(@"Request failed with: '%d - %@', error: %@",
+            [MVHttp statusCodeForResponse:response], [MVHttp stringForStatusCodeForResponse:response], [error localizedDescription]);
+        return [MVEither leftWithValue:error];
+    }    
 }
 
 + (NSString *)sendSynchronousRequest:(NSURLRequest*)request returningResponse:(NSURLResponse **)response error:(NSError **)error {
@@ -32,13 +50,15 @@ static NSInteger MVDefaultStatusCode = 0;
     return [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
 }
 
-// TODO This is a foldL, pull it into a category on NSDictionary.
-+ (NSString *)queryStringFromDictionary:(NSDictionary *)dictionary {    
+// TODO This is just a  map . intersperse or maybe a foldL, pull it into a category on NSDictionary.
++ (NSString *)queryStringFromDictionary:(NSDictionary *)dictionary {
     NSMutableString *queryString = [NSMutableString stringWithCapacity:1];
     NSArray *keys = [dictionary allKeys];
     for (int i = 0; i < [keys count]; i++) {
         if (i != 0) [queryString appendString:@"&"];
-        [queryString appendString:[NSString stringWithFormat:@"%@=%@", [keys objectAtIndex:i], [dictionary objectForKey:[keys objectAtIndex:i]]]];
+        NSString *encodedKey = [[keys objectAtIndex:i] stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+        NSString *encodedValue = [[dictionary objectForKey:[keys objectAtIndex:i]] stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+        [queryString appendString:[NSString stringWithFormat:@"%@=%@", encodedKey, encodedValue]];
     }
     return queryString;    
 }

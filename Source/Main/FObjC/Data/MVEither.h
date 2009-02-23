@@ -18,6 +18,12 @@
 // Construct a right value of either.
 + (MVEither *)rightWithValue:(id)value;
 
+// Maps the given selector across the left of this either.
+- (MVEither *)mapLeftWithSelector:(SEL)selector;
+
+// Maps the given selector across the right of this either.
+- (MVEither *)mapRightWithSelector:(SEL)selector;
+    
 // Does this either have a value on the left?
 - (BOOL)isLeft;
 

@@ -35,7 +35,7 @@
         NSURLResponse *response;
         NSError *error;
         NSString *content = [MVHttp sendSynchronousRequest:request returningResponse:&response error:&error];        
-        if ((!error) && ([MVHttp statusCodeForResponse:response] == HTTP_OK) && ([content length] > 0)) {
+        if ((!error) && ([MVHttp statusCodeForResponse:response] == MVHttpOkStatusCode) && ([content length] > 0)) {
             LOG(@"Successfully reported app open, response: %@", content);
             [[AdMobHelper adMobAppOpenReportedFilePath] touchFile];
         }
