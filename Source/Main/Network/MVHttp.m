@@ -36,11 +36,11 @@ static NSInteger MVDefaultStatusCode = 0;
     NSError *error;
     NSString *content = [MVHttp sendSynchronousRequest:request returningResponse:&response error:&error];
 	if (error == nil && [MVHttp statusCodeForResponse:response] == MVHttpOkStatusCode) {
-        LOG(@"Request succeeded, raw response: %@", content);
+        LOG(@"Request succeeded, raw response content: %@", content);
         return [MVEither rightWithValue:content];
     } else {
-        LOG(@"Request failed with: '%d - %@', error: %@",
-            [MVHttp statusCodeForResponse:response], [MVHttp stringForStatusCodeForResponse:response], [error localizedDescription]);
+        LOG(@"Request failed with: '%d - %@', error: %@, raw response content: %@",
+            [MVHttp statusCodeForResponse:response], [MVHttp stringForStatusCodeForResponse:response], [error localizedDescription], content);
         return [MVEither leftWithValue:error];
     }    
 }
