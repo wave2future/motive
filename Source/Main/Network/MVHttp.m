@@ -56,8 +56,8 @@ static NSInteger MVDefaultStatusCode = 0;
     NSArray *keys = [dictionary allKeys];
     for (int i = 0; i < [keys count]; i++) {
         if (i != 0) [queryString appendString:@"&"];
-        NSString *encodedKey = [[keys objectAtIndex:i] stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
-        NSString *encodedValue = [[dictionary objectForKey:[keys objectAtIndex:i]] stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+        NSString *encodedKey = [[[keys objectAtIndex:i] description] stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+        NSString *encodedValue = [[[dictionary objectForKey:[keys objectAtIndex:i]] description] stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
         [queryString appendString:[NSString stringWithFormat:@"%@=%@", encodedKey, encodedValue]];
     }
     return queryString;    
