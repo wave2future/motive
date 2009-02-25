@@ -18,12 +18,22 @@
 // Construct a right value of either.
 + (MVEither *)rightWithValue:(id)value;
 
-// Maps the given selector across the left of this either.
+// Maps the given selector across the value in the left of this either.
 - (MVEither *)mapLeftWithSelector:(SEL)selector;
 
-// Maps the given selector across the right of this either.
+// Maps the given selector across the left of this either by invoking |selector| on |object| passing the value in the left as an argument.
+// |selector| should be a method taking a single argument of type |id| and return |id|.
+// Note. Returns this either (i.e. self) if the given |object| does not response to |selector|.
+- (MVEither *)mapLeftWithSelector:(SEL)selector onObject:(id)object;
+
+// Maps the given selector across the value in the right of this either.
 - (MVEither *)mapRightWithSelector:(SEL)selector;
-    
+
+// Maps the given selector across the right of this either by invoking |selector| on |object| passing the value in the right as an argument.
+// |selector| should be a method taking a single argument of type |id| and return |id|.
+// Note. Returns this either (i.e. self) if the given |object| does not response to |selector|.
+- (MVEither *)mapRightWithSelector:(SEL)selector onObject:(id)object;
+
 // Does this either have a value on the left?
 - (BOOL)isLeft;
 

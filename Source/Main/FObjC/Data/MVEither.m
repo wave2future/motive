@@ -15,11 +15,19 @@
 }
 
 - (MVEither *)mapLeftWithSelector:(SEL)selector {
-    return onleft ? [MVEither leftWithValue:[value performSelector:selector]] : self;
+    return [self isLeft] ? [MVEither leftWithValue:[value performSelector:selector]] : self;
+}
+
+- (MVEither *)mapLeftWithSelector:(SEL)selector onObject:(id)object {
+    return [self isLeft] && [object respondsToSelector:selector] ? [MVEither leftWithValue:[object performSelector:selector withObject:value]] : self;
 }
 
 - (MVEither *)mapRightWithSelector:(SEL)selector {
-    return onleft ? self : [MVEither rightWithValue:[value performSelector:selector]];
+    return [self isRight] ? [MVEither rightWithValue:[value performSelector:selector]] : self;
+}
+
+- (MVEither *)mapRightWithSelector:(SEL)selector onObject:(id)object {
+    return [self isRight] && [object respondsToSelector:selector] ? [MVEither rightWithValue:[object performSelector:selector withObject:value]] : self;
 }
 
 - (BOOL)isLeft {
