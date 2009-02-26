@@ -1,5 +1,5 @@
 #import "MVHttp.h"
-
+#import "MVLog.h"
 @implementation MVHttp
 
 static NSTimeInterval MVRequestTimeoutInterval = 60.0;
