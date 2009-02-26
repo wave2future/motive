@@ -2,7 +2,7 @@
 
 // TODO Look at FJ projections for a better way to return an error, so we don't need to do: [(NSError *)[result value]  localizedDescription].
 // TODO Add in some projections, look at FJ for details.
-// TODO Add isEqual: method.
+// TODO Make value, left, right properties.
 
 // The Either type represents a value of one of two possible types (a disjoint union).
 // The data constructors; Left and Right represent the two possible values. The Either type is often used as an alternative to Option where Left 

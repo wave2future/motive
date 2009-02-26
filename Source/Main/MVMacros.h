@@ -1,4 +1,3 @@
-
 #define ATTR @property (nonatomic, retain)
 #define READ @property (readonly)
 

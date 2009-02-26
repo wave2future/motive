@@ -8,7 +8,7 @@
 
 @synthesize _1, _2;
 
-+ (MVP2 *)mvP2With_1:(id)_1 _2:(id)_2 {
++ (MVP2 *)p2With_1:(id)_1 _2:(id)_2 {
     return [[[MVP2 alloc] initWith_1:_1 _2:_2] autorelease];
 }
 
