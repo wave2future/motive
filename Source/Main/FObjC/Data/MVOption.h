@@ -20,6 +20,8 @@
 // Returns the value of this optional value or the given argument.
 - (id)orSome:(id)some;
 
+- (MVOption *)mapWithSelector:(SEL)selector;
+
 @end
 
 @interface MVNone : MVOption

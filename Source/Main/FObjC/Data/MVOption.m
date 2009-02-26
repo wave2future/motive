@@ -62,4 +62,8 @@
     return [self isSome] ? [self some] : some;
 }
 
+- (MVOption *)mapWithSelector:(SEL)selector {
+	return ([self isSome] && [[self some] respondsToSelector:selector] )? [[self some] performSelector:selector] : self;
+}
+
 @end
