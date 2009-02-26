@@ -1,5 +1,6 @@
 #import "GTMSenTestCase.h"
 #import "MVOption.h"
+#import "MVLog.h"
 
 @interface MVOptionUnitTest : GTMTestCase {
     NSObject *object;
@@ -29,6 +30,14 @@
 - (void)testTransformsNilsIntoNones {
     STAssertTrue([[MVOption fromNil:nil] isNone], nil);
     STAssertTrue([[MVOption fromNil:object] isSome], nil);
+}
+
+- (void)testMaps {
+	STAssertTrue([[[MVOption none] mapWithSelector:@selector(description)] isNone], nil);
+	NSString *description = [object description];
+	MVOption *r = [[MVOption some:object] mapWithSelector:@selector(description)];
+	STAssertTrue([r isSome], nil);	
+	STAssertEqualObjects([r some], description, nil);
 }
 
 @end
