@@ -63,7 +63,11 @@
 }
 
 - (MVOption *)mapWithSelector:(SEL)selector {
-	return ([self isSome] && [[self some] respondsToSelector:selector]) ? [[self some] performSelector:selector] : self;
+	return [self isSome] && [[self some] respondsToSelector:selector] ? [MVOption some:[[self some] performSelector:selector]] : self;
+}
+
+- (MVOption *)mapWithSelector:(SEL)selector onObject:(id)object {
+	return [self isSome] && [object respondsToSelector:selector] ? [MVOption some:[object performSelector:selector withObject:[self some]]] : self;
 }
 
 @end

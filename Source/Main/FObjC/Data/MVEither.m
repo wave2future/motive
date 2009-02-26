@@ -15,7 +15,7 @@
 }
 
 - (MVEither *)mapLeftWithSelector:(SEL)selector {
-    return [self isLeft] ? [MVEither leftWithValue:[value performSelector:selector]] : self;
+    return [self isLeft] && [value respondsToSelector:selector] ? [MVEither leftWithValue:[value performSelector:selector]] : self;
 }
 
 - (MVEither *)mapLeftWithSelector:(SEL)selector onObject:(id)object {
@@ -23,7 +23,7 @@
 }
 
 - (MVEither *)mapRightWithSelector:(SEL)selector {
-    return [self isRight] ? [MVEither rightWithValue:[value performSelector:selector]] : self;
+    return [self isRight] && [value respondsToSelector:selector] ? [MVEither rightWithValue:[value performSelector:selector]] : self;
 }
 
 - (MVEither *)mapRightWithSelector:(SEL)selector onObject:(id)object {
