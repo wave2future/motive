@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47D825FC0F5C98AE00D692AB /* MVFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D825FA0F5C98AE00D692AB /* MVFunction.h */; };
+		47D825FD0F5C98AE00D692AB /* MVFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FB0F5C98AE00D692AB /* MVFunction.m */; };
+		47D825FE0F5C98AE00D692AB /* MVFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FB0F5C98AE00D692AB /* MVFunction.m */; };
+		47D826000F5C98B700D692AB /* FunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FF0F5C98B700D692AB /* FunctionTests.m */; };
+		47D826010F5C98B700D692AB /* FunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FF0F5C98B700D692AB /* FunctionTests.m */; };
 		E23DB6C70F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */; };
 		E23DB6C80F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */; };
 		E23DB6C90F4D0263005C8EDA /* NSData+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C70F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.h */; };
@@ -80,6 +85,9 @@
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		47D825FA0F5C98AE00D692AB /* MVFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVFunction.h; sourceTree = "<group>"; };
+		47D825FB0F5C98AE00D692AB /* MVFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVFunction.m; sourceTree = "<group>"; };
+		47D825FF0F5C98B700D692AB /* FunctionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionTests.m; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
 		E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
@@ -374,6 +382,8 @@
 		E2F762E50F4E58FB00D850CB /* FObjC */ = {
 			isa = PBXGroup;
 			children = (
+				47D825FA0F5C98AE00D692AB /* MVFunction.h */,
+				47D825FB0F5C98AE00D692AB /* MVFunction.m */,
 				E2F762E60F4E58FB00D850CB /* Data */,
 				E26BBEC90F5BEE580079EC67 /* MVUnit.h */,
 				E26BBECA0F5BEE580079EC67 /* MVUnit.m */,
@@ -397,6 +407,7 @@
 		E2F762F60F4E593700D850CB /* FObjC */ = {
 			isa = PBXGroup;
 			children = (
+				47D825FF0F5C98B700D692AB /* FunctionTests.m */,
 				E2F762F70F4E593700D850CB /* Data */,
 			);
 			path = FObjC;
@@ -446,6 +457,7 @@
 				E26BBED80F5BEE870079EC67 /* NSArray+Motive.h in Headers */,
 				E26BBEDA0F5BEE870079EC67 /* NSDictionary+Motive.h in Headers */,
 				E26BBEDC0F5BEE870079EC67 /* NSString+Motive.h in Headers */,
+				47D825FC0F5C98AE00D692AB /* MVFunction.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +567,8 @@
 				E26BBED90F5BEE870079EC67 /* NSArray+Motive.m in Sources */,
 				E26BBEDB0F5BEE870079EC67 /* NSDictionary+Motive.m in Sources */,
 				E26BBEDD0F5BEE870079EC67 /* NSString+Motive.m in Sources */,
+				47D825FD0F5C98AE00D692AB /* MVFunction.m in Sources */,
+				47D826000F5C98B700D692AB /* FunctionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +594,8 @@
 				E26BBED50F5BEE870079EC67 /* NSArray+Motive.m in Sources */,
 				E26BBED60F5BEE870079EC67 /* NSDictionary+Motive.m in Sources */,
 				E26BBED70F5BEE870079EC67 /* NSString+Motive.m in Sources */,
+				47D825FE0F5C98AE00D692AB /* MVFunction.m in Sources */,
+				47D826010F5C98B700D692AB /* FunctionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
