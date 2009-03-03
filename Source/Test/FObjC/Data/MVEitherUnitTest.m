@@ -60,4 +60,24 @@
     STAssertNotEqualObjects(l, r, nil);
 }
 
+- (void)testAccessingTheRightValueInLeftThrowsAnError {
+    MVEither *l = [MVEither leftWithValue:o1];
+    @try {
+        l.right.value;
+        STFail(@"Expected an exception to be thrown");
+    }
+    @catch (id exception) {
+    }
+}
+
+- (void)testAccessingTheLeftValueInLeftThrowsAnError {
+    MVEither *r = [MVEither rightWithValue:o1];
+    @try {
+        r.left.value;
+        STFail(@"Expected an exception to be thrown");
+    }
+    @catch (id exception) {
+    }
+}
+
 @end
