@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "MVMacros.h"
 
 @interface MVP1 : NSObject {
     id _1;
