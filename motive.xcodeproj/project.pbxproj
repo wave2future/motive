@@ -73,6 +73,9 @@
 		E26BBF980F5CAA8F0079EC67 /* MVP1.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BBF970F5CAA8F0079EC67 /* MVP1.m */; };
 		E26BBF990F5CAA8F0079EC67 /* MVP1.h in Headers */ = {isa = PBXBuildFile; fileRef = E26BBF960F5CAA8F0079EC67 /* MVP1.h */; };
 		E26BBF9A0F5CAA8F0079EC67 /* MVP1.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BBF970F5CAA8F0079EC67 /* MVP1.m */; };
+		E27759A00F5FE27400FF253A /* MVPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = E277599F0F5FE27400FF253A /* MVPromise.m */; };
+		E27759A10F5FE27400FF253A /* MVPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = E277599E0F5FE27400FF253A /* MVPromise.h */; };
+		E27759A20F5FE27400FF253A /* MVPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = E277599F0F5FE27400FF253A /* MVPromise.m */; };
 		E2F762ED0F4E58FB00D850CB /* MVEither.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762E80F4E58FB00D850CB /* MVEither.m */; };
 		E2F762EE0F4E58FB00D850CB /* MVOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762EA0F4E58FB00D850CB /* MVOption.m */; };
 		E2F762EF0F4E58FB00D850CB /* MVP2.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F762EC0F4E58FB00D850CB /* MVP2.m */; };
@@ -142,6 +145,8 @@
 		E26BBED40F5BEE870079EC67 /* NSString+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Motive.m"; sourceTree = "<group>"; };
 		E26BBF960F5CAA8F0079EC67 /* MVP1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVP1.h; sourceTree = "<group>"; };
 		E26BBF970F5CAA8F0079EC67 /* MVP1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVP1.m; sourceTree = "<group>"; };
+		E277599E0F5FE27400FF253A /* MVPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPromise.h; sourceTree = "<group>"; };
+		E277599F0F5FE27400FF253A /* MVPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPromise.m; sourceTree = "<group>"; };
 		E2F762E70F4E58FB00D850CB /* MVEither.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVEither.h; sourceTree = "<group>"; };
 		E2F762E80F4E58FB00D850CB /* MVEither.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVEither.m; sourceTree = "<group>"; };
 		E2F762E90F4E58FB00D850CB /* MVOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVOption.h; sourceTree = "<group>"; };
@@ -384,9 +389,42 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E277599A0F5FE21F00FF253A /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				E277599B0F5FE21F00FF253A /* Parallel */,
+				E277599E0F5FE27400FF253A /* MVPromise.h */,
+				E277599F0F5FE27400FF253A /* MVPromise.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		E277599B0F5FE21F00FF253A /* Parallel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parallel;
+			sourceTree = "<group>";
+		};
+		E277599C0F5FE24B00FF253A /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				E277599D0F5FE24B00FF253A /* Parallel */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		E277599D0F5FE24B00FF253A /* Parallel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parallel;
+			sourceTree = "<group>";
+		};
 		E2F762E50F4E58FB00D850CB /* FObjC */ = {
 			isa = PBXGroup;
 			children = (
+				E277599A0F5FE21F00FF253A /* Control */,
 				E2F762E60F4E58FB00D850CB /* Data */,
 				47D825FA0F5C98AE00D692AB /* MVFunction.h */,
 				47D825FB0F5C98AE00D692AB /* MVFunction.m */,
@@ -414,6 +452,7 @@
 		E2F762F60F4E593700D850CB /* FObjC */ = {
 			isa = PBXGroup;
 			children = (
+				E277599C0F5FE24B00FF253A /* Control */,
 				E2F762F70F4E593700D850CB /* Data */,
 				47D825FF0F5C98B700D692AB /* FunctionTests.m */,
 			);
@@ -466,6 +505,7 @@
 				E26BBEDC0F5BEE870079EC67 /* NSString+Motive.h in Headers */,
 				47D825FC0F5C98AE00D692AB /* MVFunction.h in Headers */,
 				E26BBF990F5CAA8F0079EC67 /* MVP1.h in Headers */,
+				E27759A10F5FE27400FF253A /* MVPromise.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +618,7 @@
 				47D825FD0F5C98AE00D692AB /* MVFunction.m in Sources */,
 				47D826000F5C98B700D692AB /* FunctionTests.m in Sources */,
 				E26BBF9A0F5CAA8F0079EC67 /* MVP1.m in Sources */,
+				E27759A20F5FE27400FF253A /* MVPromise.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +647,7 @@
 				47D825FE0F5C98AE00D692AB /* MVFunction.m in Sources */,
 				47D826010F5C98B700D692AB /* FunctionTests.m in Sources */,
 				E26BBF980F5CAA8F0079EC67 /* MVP1.m in Sources */,
+				E27759A00F5FE27400FF253A /* MVPromise.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
