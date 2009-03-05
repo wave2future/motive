@@ -2,36 +2,82 @@
 #import "MVEither.h"
 
 @interface MVEitherUnitTest : GTMTestCase {
-    NSObject *object;
+    NSObject *o1;
+    NSObject *o2;
 }
 @end
 
 @implementation MVEitherUnitTest
 
 - (void)setUp {
-    object = [[[NSObject alloc] init] autorelease];
+    o1 = [[[NSObject alloc] init] autorelease];
+    o2 = [[[NSObject alloc] init] autorelease];
 }
 
 - (void)testALeftIsLeft {
-    MVEither *left = [MVEither leftWithValue:object];
-    STAssertTrue([left isLeft], nil);
-    STAssertFalse([left isRight], nil);
+    MVEither *leftEither = [MVEither leftWithValue:o1];
+    MVLeftProjection *left = leftEither.left;
+    STAssertTrue(leftEither.isLeft, nil);
+    STAssertFalse(leftEither.isRight, nil);
+    STAssertEqualObjects(o1, left.value, nil);
 }
 
 - (void)testARightIsRight {
-    MVEither *right = [MVEither rightWithValue:object];
-    STAssertTrue([right isRight], nil);
-    STAssertFalse([right isLeft], nil);
+    MVEither *rightEither = [MVEither rightWithValue:o1];
+    MVRightProjection *right = rightEither.right;
+    STAssertTrue(rightEither.isRight, nil);
+    STAssertFalse(rightEither.isLeft, nil);
+    STAssertEqualObjects(o1, right.value, nil);
 }
 
-- (void)testALeftCanHoldAValue {
-    MVEither *left = [MVEither leftWithValue:object];
-    STAssertEqualObjects(object, [left value], nil);
+- (void)testTwoLeftsWithEqualValuesAreEqual {
+    MVEither *l1 = [MVEither leftWithValue:o1];
+    MVEither *l2 = [MVEither leftWithValue:o1];
+    STAssertEqualObjects(l1, l2, nil);
 }
 
-- (void)testARightCanHoldAValue {
-    MVEither *right = [MVEither rightWithValue:object];
-    STAssertEqualObjects(object, [right value], nil);
+- (void)testTwoRightsWithEqualValuesAreEqual {
+    MVEither *r1 = [MVEither rightWithValue:o1];
+    MVEither *r2 = [MVEither rightWithValue:o1];
+    STAssertEqualObjects(r1, r2, nil);
+}
+
+- (void)testTwoLeftsWithUnEqualValuesAreNotEqual {
+    MVEither *l1 = [MVEither leftWithValue:o1];
+    MVEither *l2 = [MVEither leftWithValue:o2];
+    STAssertNotEqualObjects(l1, l2, nil);
+}
+
+- (void)testTwoRightsWithUnEqualValuesAreNotEqual {
+    MVEither *r1 = [MVEither rightWithValue:o1];
+    MVEither *r2 = [MVEither rightWithValue:o2];
+    STAssertNotEqualObjects(r1, r2, nil);
+}
+
+- (void)testALeftAndARightAreNotEqual {
+    MVEither *l = [MVEither leftWithValue:o1];
+    MVEither *r = [MVEither rightWithValue:o1];
+    STAssertNotEqualObjects(l, r, nil);
+}
+
+- (void)testAccessingTheRightValueInLeftThrowsAnError {
+    MVEither *l = [MVEither leftWithValue:o1];
+    @try {
+        l.right.value;
+        STFail(@"Expected an exception to be thrown");
+    }
+    @catch (id exception) {
+    }
+}
+
+- (void)testAccessingTheLeftValueInLeftThrowsAnError {
+    MVEither *r = [MVEither rightWithValue:o1];
+    @try {
+        r.left.value;
+        STFail(@"Expected an exception to be thrown");
+    }
+    @catch (id exception) {
+    }
 }
 
 @end
