@@ -18,7 +18,7 @@
 }
 
 #pragma mark Private methods.
-- (MVP1 *)initWith_1:(id)new_1 {
+- (id)initWith_1:(id)new_1 {
     if (self = [super init]) {
         _1 = [new_1 retain];
     }
