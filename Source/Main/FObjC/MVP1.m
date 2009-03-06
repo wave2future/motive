@@ -25,4 +25,8 @@
     return self;
 }
 
+- (NSString *)description {
+	return [NSString stringWithFormat:@"<%s: _1=%@>", class_getName([self class]), _1];
+}
+
 @end

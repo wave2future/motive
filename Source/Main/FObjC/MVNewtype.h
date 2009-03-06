@@ -22,8 +22,7 @@
 @property (readonly) wrappedtype *value; \
 @end \
 @implementation newtype \
-@synthesize value=_1; \
-- (newtype *)initWith_1:(id)new_1 { \
+- (newtype *)initWith_1:(wrappedtype *)new_1 { \
 if ((self = [super initWith_1:new_1])) { \
 } \
 return self;\
@@ -31,9 +30,8 @@ return self;\
 + (newtype *)value:(wrappedtype *)thing { \
 return [[[self alloc] initWith_1:thing] autorelease]; \
 }\
-- (NSString *)description { \
-return [NSString stringWithFormat:@"<%s: value=%@>", class_getName([self class]), _1]; \
-} \
 @end
 
 // P2 newtype
+#define NEWTYPE2(newtype, wrappedtype1, wrappedtype2)
+
