@@ -32,5 +32,17 @@ return [[[self alloc] initWith_1:thing] autorelease]; \
 @end
 
 // P2 newtype
-#define NEWTYPE2(newtype, wrappedtype1, wrappedtype2)
-
+#define NEWTYPE2(newtype, wrappedtype1, wrappedtype2) \
+@interface newtype : MVP2 \
++ (newtype *)value:(wrappedtype1 *)_1 :(wrappedtype2 *)_2; \
+@end \
+@implementation newtype \
+- (newtype *)initWith_1:(wrappedtype1 *)new_1 _2:(wrappedtype2 *)new_2 { \
+	if ((self = [super initWith_1:new_1 _2:new_2])) { \
+	} \
+	return self; \
+} \
++ (newtype *)value:(wrappedtype1 *)_1 :(wrappedtype2 *)_2 { \
+	return [[[self alloc] initWith_1:_1 _2:_2] autorelease]; \
+} \
+@end

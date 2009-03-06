@@ -4,6 +4,8 @@
 #import "MVNewtype.h"
 
 NEWTYPE(Age, NSString);
+NEWTYPE(Name, NSString);
+NEWTYPE2(Person, Age, Name);
 
 @interface MVFunctionUnitTest : GTMTestCase {
     NSObject *object;
@@ -22,8 +24,11 @@ NEWTYPE(Age, NSString);
 	NSString *result = [f apply:object];
 	STAssertEqualObjects(d, result, nil);
 	
-	Age *mine = [Age value:@"54"];
-	NSLog([mine description]);
-	NSLog([mine _1]);
+	Age *age = [Age value:@"54"];
+	Name *name = [Name value:@"Nick"];
+	Person *nick = [Person value:age :name];
+	NSLog([nick description]);
+	NSLog([[nick _1] description]);
+	NSLog([[nick _2] description]);
 }
 @end

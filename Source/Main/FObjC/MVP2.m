@@ -1,7 +1,7 @@
 #import "MVP2.h"
+#import <objc/runtime.h>
 
 @interface MVP2 (MVP2Private)
-- (MVP2 *)initWith_1:(id)new_1 _2:(id)new_2;
 @end
 
 @implementation MVP2
@@ -19,12 +19,17 @@
 }
 
 #pragma mark Private methods.
-- (MVP2 *)initWith_1:(id)new_1 _2:(id)new_2 {
+- (id)initWith_1:(id)new_1 _2:(id)new_2 {
     if (self = [super init]) {
         _1 = [new_1 retain];
         _2 = [new_2 retain];
     }
     return self;
+}
+
+#pragma mark NSObject
+- (NSString *)description {
+	return [NSString stringWithFormat:@"<%s: _1=%@ _2=%@>", class_getName([self class]), _1, _2];
 }
 
 @end
