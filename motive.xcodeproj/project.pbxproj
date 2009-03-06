@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47C4AFB10F60EAC4005CFCD3 /* MVNewtype.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C4AFB00F60EAC4005CFCD3 /* MVNewtype.h */; };
 		47D825FC0F5C98AE00D692AB /* MVFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D825FA0F5C98AE00D692AB /* MVFunction.h */; };
 		47D825FD0F5C98AE00D692AB /* MVFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FB0F5C98AE00D692AB /* MVFunction.m */; };
 		47D825FE0F5C98AE00D692AB /* MVFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FB0F5C98AE00D692AB /* MVFunction.m */; };
@@ -91,6 +92,7 @@
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		47C4AFB00F60EAC4005CFCD3 /* MVNewtype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNewtype.h; sourceTree = "<group>"; };
 		47D825FA0F5C98AE00D692AB /* MVFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVFunction.h; sourceTree = "<group>"; };
 		47D825FB0F5C98AE00D692AB /* MVFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVFunction.m; sourceTree = "<group>"; };
 		47D825FF0F5C98B700D692AB /* FunctionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionTests.m; sourceTree = "<group>"; };
@@ -434,6 +436,7 @@
 				E2F762EC0F4E58FB00D850CB /* MVP2.m */,
 				E26BBEC90F5BEE580079EC67 /* MVUnit.h */,
 				E26BBECA0F5BEE580079EC67 /* MVUnit.m */,
+				47C4AFB00F60EAC4005CFCD3 /* MVNewtype.h */,
 			);
 			path = FObjC;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				47D825FC0F5C98AE00D692AB /* MVFunction.h in Headers */,
 				E26BBF990F5CAA8F0079EC67 /* MVP1.h in Headers */,
 				E27759A10F5FE27400FF253A /* MVPromise.h in Headers */,
+				47C4AFB10F60EAC4005CFCD3 /* MVNewtype.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
