@@ -10,6 +10,8 @@ READ id _1;
 
 + (MVP1 *)p1With_1:(id)_1;
 - (id)initWith_1:(id)new_1;
+
+//TODO isEqual, hash, description
 @end
 
 #define NEWTYPE(newtype, wrappedtype, cons) \
