@@ -19,7 +19,6 @@
 #define NEWTYPE(newtype, wrappedtype) \
 @interface newtype : MVP1 \
 + (newtype *)value:(wrappedtype *)thing; \
-@property (readonly) wrappedtype *value; \
 @end \
 @implementation newtype \
 - (newtype *)initWith_1:(wrappedtype *)new_1 { \

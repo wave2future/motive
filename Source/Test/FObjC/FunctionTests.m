@@ -24,6 +24,6 @@ NEWTYPE(Age, NSString);
 	
 	Age *mine = [Age value:@"54"];
 	NSLog([mine description]);
-	NSLog([mine value]);
+	NSLog([mine _1]);
 }
 @end
