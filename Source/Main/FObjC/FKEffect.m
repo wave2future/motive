@@ -18,7 +18,7 @@
 }
 
 - (oneway void)e:(id)arg {
-	[e e:[f f:arg]];
+	[e e:[f :arg]];
 }
 - (void)dealloc {
 	[e release];

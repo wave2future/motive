@@ -36,7 +36,7 @@ NEWTYPE2(Person, Age, Name);
 - (void)testSelectorFuncAppliesSelector {
 	NSString *d = [object description];
 	id <FKFunction> f = [FKFunction functionFromSelector:@selector(description)];
-	NSString *result = [f f:object];
+	NSString *result = [f :object];
 	STAssertEqualObjects(d, result, nil);
 	
 	Age *age = [Age value:@"54"];
@@ -51,8 +51,12 @@ NEWTYPE2(Person, Age, Name);
 	TestEffect *e = [[[TestEffect alloc] init] autorelease];
 	id <FKFunction> f = [FKFunction functionFromSelector:@selector(description)];
 	id <FKEffect> comapped = [FKEffect comap:e:f];
-	[comapped e:object];
-	
+	[comapped e:object];	
 	STAssertEqualObjects([object description], [e arg], nil);
+}
+
+- (void)testSelectorWithTarget {
+	id <FKFunction> f = [FKFunction functionFromSelector:@selector(arrayByAddingObject:) target:[NSArray array]];
+	STAssertEqualObjects([f :@"yep"], NSARRAY(@"yep"), nil);
 }
 @end
