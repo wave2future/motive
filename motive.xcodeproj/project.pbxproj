@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		479101310F67730C0079C30D /* FKEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 4791012F0F67730C0079C30D /* FKEffect.h */; };
+		479101320F67730C0079C30D /* FKEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 479101300F67730C0079C30D /* FKEffect.m */; };
+		479101330F67730C0079C30D /* FKEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 479101300F67730C0079C30D /* FKEffect.m */; };
 		47C4AFB10F60EAC4005CFCD3 /* MVNewtype.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C4AFB00F60EAC4005CFCD3 /* MVNewtype.h */; };
 		47C4AFBB0F60EDD6005CFCD3 /* MVPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C4AFBA0F60EDD6005CFCD3 /* MVPromise.m */; };
 		47C4AFBC0F60EDD6005CFCD3 /* MVPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C4AFB90F60EDD6005CFCD3 /* MVPromise.h */; };
 		47C4AFBD0F60EDD6005CFCD3 /* MVPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C4AFBA0F60EDD6005CFCD3 /* MVPromise.m */; };
-		47D825FC0F5C98AE00D692AB /* MVFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D825FA0F5C98AE00D692AB /* MVFunction.h */; };
-		47D825FD0F5C98AE00D692AB /* MVFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FB0F5C98AE00D692AB /* MVFunction.m */; };
-		47D825FE0F5C98AE00D692AB /* MVFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FB0F5C98AE00D692AB /* MVFunction.m */; };
+		47D825FC0F5C98AE00D692AB /* FKFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D825FA0F5C98AE00D692AB /* FKFunction.h */; };
+		47D825FD0F5C98AE00D692AB /* FKFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FB0F5C98AE00D692AB /* FKFunction.m */; };
+		47D825FE0F5C98AE00D692AB /* FKFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FB0F5C98AE00D692AB /* FKFunction.m */; };
 		47D826000F5C98B700D692AB /* FunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FF0F5C98B700D692AB /* FunctionTests.m */; };
 		47D826010F5C98B700D692AB /* FunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D825FF0F5C98B700D692AB /* FunctionTests.m */; };
 		E23DB6C70F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */; };
@@ -92,11 +95,13 @@
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		4791012F0F67730C0079C30D /* FKEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKEffect.h; sourceTree = "<group>"; };
+		479101300F67730C0079C30D /* FKEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKEffect.m; sourceTree = "<group>"; };
 		47C4AFB00F60EAC4005CFCD3 /* MVNewtype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNewtype.h; sourceTree = "<group>"; };
 		47C4AFB90F60EDD6005CFCD3 /* MVPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPromise.h; sourceTree = "<group>"; };
 		47C4AFBA0F60EDD6005CFCD3 /* MVPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPromise.m; sourceTree = "<group>"; };
-		47D825FA0F5C98AE00D692AB /* MVFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVFunction.h; sourceTree = "<group>"; };
-		47D825FB0F5C98AE00D692AB /* MVFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVFunction.m; sourceTree = "<group>"; };
+		47D825FA0F5C98AE00D692AB /* FKFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKFunction.h; sourceTree = "<group>"; };
+		47D825FB0F5C98AE00D692AB /* FKFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKFunction.m; sourceTree = "<group>"; };
 		47D825FF0F5C98B700D692AB /* FunctionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionTests.m; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
@@ -413,8 +418,10 @@
 			children = (
 				E277599A0F5FE21F00FF253A /* Control */,
 				E2F762E60F4E58FB00D850CB /* Data */,
-				47D825FA0F5C98AE00D692AB /* MVFunction.h */,
-				47D825FB0F5C98AE00D692AB /* MVFunction.m */,
+				47D825FA0F5C98AE00D692AB /* FKFunction.h */,
+				47D825FB0F5C98AE00D692AB /* FKFunction.m */,
+				4791012F0F67730C0079C30D /* FKEffect.h */,
+				479101300F67730C0079C30D /* FKEffect.m */,
 				E26BBF960F5CAA8F0079EC67 /* MVP1.h */,
 				E26BBF970F5CAA8F0079EC67 /* MVP1.m */,
 				E2F762EB0F4E58FB00D850CB /* MVP2.h */,
@@ -490,10 +497,11 @@
 				E26BBED80F5BEE870079EC67 /* NSArray+Motive.h in Headers */,
 				E26BBEDA0F5BEE870079EC67 /* NSDictionary+Motive.h in Headers */,
 				E26BBEDC0F5BEE870079EC67 /* NSString+Motive.h in Headers */,
-				47D825FC0F5C98AE00D692AB /* MVFunction.h in Headers */,
+				47D825FC0F5C98AE00D692AB /* FKFunction.h in Headers */,
 				E26BBF990F5CAA8F0079EC67 /* MVP1.h in Headers */,
 				47C4AFB10F60EAC4005CFCD3 /* MVNewtype.h in Headers */,
 				47C4AFBC0F60EDD6005CFCD3 /* MVPromise.h in Headers */,
+				479101310F67730C0079C30D /* FKEffect.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,10 +611,11 @@
 				E26BBED90F5BEE870079EC67 /* NSArray+Motive.m in Sources */,
 				E26BBEDB0F5BEE870079EC67 /* NSDictionary+Motive.m in Sources */,
 				E26BBEDD0F5BEE870079EC67 /* NSString+Motive.m in Sources */,
-				47D825FD0F5C98AE00D692AB /* MVFunction.m in Sources */,
+				47D825FD0F5C98AE00D692AB /* FKFunction.m in Sources */,
 				47D826000F5C98B700D692AB /* FunctionTests.m in Sources */,
 				E26BBF9A0F5CAA8F0079EC67 /* MVP1.m in Sources */,
 				47C4AFBD0F60EDD6005CFCD3 /* MVPromise.m in Sources */,
+				479101320F67730C0079C30D /* FKEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,10 +641,11 @@
 				E26BBED50F5BEE870079EC67 /* NSArray+Motive.m in Sources */,
 				E26BBED60F5BEE870079EC67 /* NSDictionary+Motive.m in Sources */,
 				E26BBED70F5BEE870079EC67 /* NSString+Motive.m in Sources */,
-				47D825FE0F5C98AE00D692AB /* MVFunction.m in Sources */,
+				47D825FE0F5C98AE00D692AB /* FKFunction.m in Sources */,
 				47D826010F5C98B700D692AB /* FunctionTests.m in Sources */,
 				E26BBF980F5CAA8F0079EC67 /* MVP1.m in Sources */,
 				47C4AFBB0F60EDD6005CFCD3 /* MVPromise.m in Sources */,
+				479101330F67730C0079C30D /* FKEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
