@@ -28,8 +28,10 @@
 
 @implementation FKFunctionFromSelectorWithTarget
 - (FKFunctionFromSelectorWithTarget *)initWithSelector:(SEL)s target:(NSObject *)nTarget {
+	if (![nTarget respondsToSelector:s]) {
+		@throw [NSException exceptionWithName:@"InvalidOperation" reason:[NSString stringWithFormat:@"target %@ does not respond to selector %s", nTarget, sel_getName(s)] userInfo:[NSDictionary dictionary]];
+	}
 	if ((self = [super init])) {
-		// TODO: ensure target responds to selector and fail appropriately
 		selector = s;
 		target = [nTarget retain];
 	}

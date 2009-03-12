@@ -59,4 +59,17 @@ NEWTYPE2(Person, Age, Name);
 	id <FKFunction> f = [FKFunction functionFromSelector:@selector(arrayByAddingObject:) target:[NSArray array]];
 	STAssertEqualObjects([f :@"yep"], NSARRAY(@"yep"), nil);
 }
+
+- (void)testFunctionFailsIfTargetDoesntRespondToSelector {
+	@try {
+		[FKFunction functionFromSelector:@selector(arrayByAddingObject:) target:@"wat"];		
+	}
+	@catch (NSException * e) {
+		STAssertEqualObjects([e name], @"InvalidOperation", nil);
+	}
+	@finally {
+		
+	}
+
+}
 @end
