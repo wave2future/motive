@@ -81,17 +81,29 @@
 }
 
 - (void)testMappingAcrossTheLeft {
-	MVEither *l = [MVEither leftWithValue:[NSNumber numberWithInt:54]];
-	MVEither *mapped = [l mapLeftWithSelector:@selector(description)];
+	MVEither *either = [MVEither leftWithValue:[NSNumber numberWithInt:54]];
+	MVEither *mapped = [either.left mapWithSelector:@selector(description)];
 	STAssertTrue(mapped.isLeft,nil);
 	STAssertEqualObjects(mapped.left.value, @"54",nil);
 }
 
+- (void)testMappingAcrossTheRightOfALeftIsIdentity {
+	MVEither *either = [MVEither leftWithValue:[NSNumber numberWithInt:54]];
+	MVEither *mapped = [either.right mapWithSelector:@selector(description)];
+	STAssertEqualObjects(either, mapped, nil);
+}
+
 - (void)testMappingAcrossTheRight {
-	MVEither *l = [MVEither rightWithValue:[NSNumber numberWithInt:54]];
-	MVEither *mapped = [l mapRightWithSelector:@selector(description)];
+	MVEither *either = [MVEither rightWithValue:[NSNumber numberWithInt:54]];
+	MVEither *mapped = [either.right mapWithSelector:@selector(description)];
 	STAssertTrue(mapped.isRight,nil);
 	STAssertEqualObjects(mapped.right.value, @"54",nil);	
+}
+
+- (void)testMappingAcrossTheLeftOfARightIsIdentity {
+	MVEither *either = [MVEither rightWithValue:[NSNumber numberWithInt:54]];
+	MVEither *mapped = [either.left mapWithSelector:@selector(description)];
+	STAssertEqualObjects(either, mapped, nil);
 }
 
 @end

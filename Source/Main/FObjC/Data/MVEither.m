@@ -26,6 +26,14 @@
     }
 }
 
+- (MVEither *)mapWithSelector:(SEL)selector {
+    return either.isLeft && [either.value respondsToSelector:selector] ? [MVEither leftWithValue:[either.value performSelector:selector]] : either;
+}
+
+- (MVEither *)mapWithSelector:(SEL)selector onObject:(id)object {
+    return either.isLeft && [object respondsToSelector:selector] ? [MVEither leftWithValue:[object performSelector:selector withObject:either.value]] : either;
+}
+
 - (void)dealloc {
     [either release];
     [super dealloc];
@@ -59,6 +67,14 @@
     } else {
         @throw [NSException exceptionWithName:@"InvalidOperation" reason:errorMessage userInfo:EMPTY_DICT];
     }
+}
+
+- (MVEither *)mapWithSelector:(SEL)selector {
+    return either.isRight && [either.value respondsToSelector:selector] ? [MVEither rightWithValue:[either.value performSelector:selector]] : either;
+}
+
+- (MVEither *)mapWithSelector:(SEL)selector onObject:(id)object {
+    return either.isRight && [object respondsToSelector:selector] ? [MVEither rightWithValue:[object performSelector:selector withObject:either.value]] : either;
 }
 
 - (void)dealloc {
@@ -146,21 +162,4 @@
 }
 
 // TODO DELETE BELOW HERE. THESE BELONG IN PROJECTIONS.
-
-- (MVEither *)mapLeftWithSelector:(SEL)selector {
-    return [self isLeft] && [value respondsToSelector:selector] ? [MVEither leftWithValue:[value performSelector:selector]] : self;
-}
-
-- (MVEither *)mapLeftWithSelector:(SEL)selector onObject:(id)object {
-    return [self isLeft] && [object respondsToSelector:selector] ? [MVEither leftWithValue:[object performSelector:selector withObject:value]] : self;
-}
-
-- (MVEither *)mapRightWithSelector:(SEL)selector {
-    return [self isRight] && [value respondsToSelector:selector] ? [MVEither rightWithValue:[value performSelector:selector]] : self;
-}
-
-- (MVEither *)mapRightWithSelector:(SEL)selector onObject:(id)object {
-    return [self isRight] && [object respondsToSelector:selector] ? [MVEither rightWithValue:[object performSelector:selector withObject:value]] : self;
-}
-
 @end
