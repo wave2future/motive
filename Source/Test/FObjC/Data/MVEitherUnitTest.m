@@ -80,4 +80,18 @@
     }
 }
 
+- (void)testMappingAcrossTheLeft {
+	MVEither *l = [MVEither leftWithValue:[NSNumber numberWithInt:54]];
+	MVEither *mapped = [l mapLeftWithSelector:@selector(description)];
+	STAssertTrue(mapped.isLeft,nil);
+	STAssertEqualObjects(mapped.left.value, @"54",nil);
+}
+
+- (void)testMappingAcrossTheRight {
+	MVEither *l = [MVEither rightWithValue:[NSNumber numberWithInt:54]];
+	MVEither *mapped = [l mapRightWithSelector:@selector(description)];
+	STAssertTrue(mapped.isRight,nil);
+	STAssertEqualObjects(mapped.right.value, @"54",nil);	
+}
+
 @end
