@@ -17,9 +17,7 @@ NEWTYPE3(Position, Person, occupier, NSString, title, NSDate, started);
 	Position *p = [Position occupier:nick title:@"Dev" started:[NSDate date]];
 	STAssertEqualObjects(age.age, @"54", nil);
 	STAssertEqualObjects(nick.name.name, @"Nick", nil);
-	
 	STAssertEqualObjects(p.title, @"Dev", nil);
-	
 }
 @end
 

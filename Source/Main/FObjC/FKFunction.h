@@ -15,4 +15,6 @@
 // On application, the selector will be sent to the target, with the argument as an argument...
 // eg. [target selector:arg]
 + (id <FKFunction>)functionFromSelector:(SEL)s target:(NSObject *)target;
+
++ (id <FKFunction>)lift:(id <FKFunction>)f;
 @end
