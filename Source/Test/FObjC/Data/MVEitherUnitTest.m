@@ -1,5 +1,6 @@
 #import "GTMSenTestCase.h"
 #import "MVEither.h"
+#import "FKFunction.h"
 
 @interface MVEitherUnitTest : GTMTestCase {
     NSObject *o1;
@@ -104,6 +105,12 @@
 	MVEither *either = [MVEither rightWithValue:[NSNumber numberWithInt:54]];
 	MVEither *mapped = [either.left mapWithSelector:@selector(description)];
 	STAssertEqualObjects(either, mapped, nil);
+}
+
+- (void)testMappingUsingF {
+	MVEither *either = [MVEither rightWithValue:[NSNumber numberWithInt:54]];
+	MVEither *mapped = [either.right map:[FKFunction functionFromSelector:@selector(description)]];
+	STAssertEqualObjects(mapped.right.value, @"54", nil);
 }
 
 @end

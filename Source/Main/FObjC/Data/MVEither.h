@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "MVMacros.h"
+#import "FKFunction.h"
 
 @class MVEither;
 
@@ -22,6 +23,8 @@ READ id value;
 // |selector| should be a method taking a single argument of type |id| and return |id|.
 // Note. Returns this either (i.e. self) if the given |object| does not response to |selector|.
 - (MVEither *)mapWithSelector:(SEL)selector onObject:(id)object;
+
+- (MVEither *)map:(id <FKFunction>)f;
 @end
 
 @interface MVLeftProjection : NSObject <MVEitherProjection> {

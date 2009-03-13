@@ -34,6 +34,10 @@
     return either.isLeft && [object respondsToSelector:selector] ? [MVEither leftWithValue:[object performSelector:selector withObject:either.value]] : either;
 }
 
+- (MVEither *)map:(id <FKFunction>)f {
+	return either.isLeft ? [MVEither leftWithValue:[f :either.value]] : either;
+}
+
 - (void)dealloc {
     [either release];
     [super dealloc];
@@ -75,6 +79,10 @@
 
 - (MVEither *)mapWithSelector:(SEL)selector onObject:(id)object {
     return either.isRight && [object respondsToSelector:selector] ? [MVEither rightWithValue:[object performSelector:selector withObject:either.value]] : either;
+}
+
+- (MVEither *)map:(id <FKFunction>)f {
+	return either.isRight ? [MVEither rightWithValue:[f :either.value]] : either;
 }
 
 - (void)dealloc {
