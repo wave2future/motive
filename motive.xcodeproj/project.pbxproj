@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		475AF7460F69F559004E82F0 /* MVNewtypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 475AF7450F69F559004E82F0 /* MVNewtypeTests.m */; };
+		475AF7470F69F559004E82F0 /* MVNewtypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 475AF7450F69F559004E82F0 /* MVNewtypeTests.m */; };
+		475AF7560F6A0932004E82F0 /* MVP3.h in Headers */ = {isa = PBXBuildFile; fileRef = 475AF7540F6A0932004E82F0 /* MVP3.h */; };
+		475AF7570F6A0932004E82F0 /* MVP3.m in Sources */ = {isa = PBXBuildFile; fileRef = 475AF7550F6A0932004E82F0 /* MVP3.m */; };
+		475AF7580F6A0932004E82F0 /* MVP3.m in Sources */ = {isa = PBXBuildFile; fileRef = 475AF7550F6A0932004E82F0 /* MVP3.m */; };
 		479101310F67730C0079C30D /* FKEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 4791012F0F67730C0079C30D /* FKEffect.h */; };
 		479101320F67730C0079C30D /* FKEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 479101300F67730C0079C30D /* FKEffect.m */; };
 		479101330F67730C0079C30D /* FKEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 479101300F67730C0079C30D /* FKEffect.m */; };
@@ -95,6 +100,9 @@
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		475AF7450F69F559004E82F0 /* MVNewtypeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVNewtypeTests.m; sourceTree = "<group>"; };
+		475AF7540F6A0932004E82F0 /* MVP3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVP3.h; sourceTree = "<group>"; };
+		475AF7550F6A0932004E82F0 /* MVP3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVP3.m; sourceTree = "<group>"; };
 		4791012F0F67730C0079C30D /* FKEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKEffect.h; sourceTree = "<group>"; };
 		479101300F67730C0079C30D /* FKEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKEffect.m; sourceTree = "<group>"; };
 		47C4AFB00F60EAC4005CFCD3 /* MVNewtype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVNewtype.h; sourceTree = "<group>"; };
@@ -429,6 +437,8 @@
 				E26BBEC90F5BEE580079EC67 /* MVUnit.h */,
 				E26BBECA0F5BEE580079EC67 /* MVUnit.m */,
 				47C4AFB00F60EAC4005CFCD3 /* MVNewtype.h */,
+				475AF7540F6A0932004E82F0 /* MVP3.h */,
+				475AF7550F6A0932004E82F0 /* MVP3.m */,
 			);
 			path = FObjC;
 			sourceTree = "<group>";
@@ -449,6 +459,7 @@
 			children = (
 				E2F762F70F4E593700D850CB /* Data */,
 				47D825FF0F5C98B700D692AB /* FunctionTests.m */,
+				475AF7450F69F559004E82F0 /* MVNewtypeTests.m */,
 			);
 			path = FObjC;
 			sourceTree = "<group>";
@@ -502,6 +513,7 @@
 				47C4AFB10F60EAC4005CFCD3 /* MVNewtype.h in Headers */,
 				47C4AFBC0F60EDD6005CFCD3 /* MVPromise.h in Headers */,
 				479101310F67730C0079C30D /* FKEffect.h in Headers */,
+				475AF7560F6A0932004E82F0 /* MVP3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +628,8 @@
 				E26BBF9A0F5CAA8F0079EC67 /* MVP1.m in Sources */,
 				47C4AFBD0F60EDD6005CFCD3 /* MVPromise.m in Sources */,
 				479101320F67730C0079C30D /* FKEffect.m in Sources */,
+				475AF7460F69F559004E82F0 /* MVNewtypeTests.m in Sources */,
+				475AF7570F6A0932004E82F0 /* MVP3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +660,8 @@
 				E26BBF980F5CAA8F0079EC67 /* MVP1.m in Sources */,
 				47C4AFBB0F60EDD6005CFCD3 /* MVPromise.m in Sources */,
 				479101330F67730C0079C30D /* FKEffect.m in Sources */,
+				475AF7470F69F559004E82F0 /* MVNewtypeTests.m in Sources */,
+				475AF7580F6A0932004E82F0 /* MVP3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
