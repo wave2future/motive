@@ -8,6 +8,15 @@
 #define MVXWwwFormUrlEncodedMimeType    @"application/x-www-form-urlencoded"
 #define MVJsonMimeType                  @"application/application/json"
 
+@protocol MVDataMapper <FKFunction>
+- (id):(NSData *)arg;
+@end
+
+@interface NSDataToNSString : NSObject <MVDataMapper> 
+@end
+
+@interface NSDataToUIImage : NSObject <MVDataMapper> 
+@end
 
 @interface MVHttp : NSObject
 
@@ -20,7 +29,7 @@
 
 // Returns an MVEither with an NSError on the left or NSString with response content on the right.
 + (MVEither *)sendSynchronousRequest:(NSURLRequest *)request;
-+ (NSString *)sendSynchronousRequest:(NSURLRequest*)request returningResponse:(NSURLResponse **)response error:(NSError **)error;
++ (MVEither *)sendSynchronousRequest:(NSURLRequest *)request withDataMapper:(id <MVDataMapper>)dataMapper;
 
 + (NSString *)queryStringFromDictionary:(NSDictionary *)dictionary;
 

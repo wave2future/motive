@@ -32,11 +32,9 @@
     if (![[AdMobHelper adMobAppOpenReportedFilePath] fileExists]) {
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
         LOG(@"Reporting initial application start to AdMob on URL %@", [[request URL] absoluteString]);
-        NSURLResponse *response;
-        NSError *error;
-        NSString *content = [MVHttp sendSynchronousRequest:request returningResponse:&response error:&error];        
-        if ((!error) && ([MVHttp statusCodeForResponse:response] == MVHttpOkStatusCode) && ([content length] > 0)) {
-            LOG(@"Successfully reported app open, response: %@", content);
+        MVEither *response = [MVHttp sendSynchronousRequest:request];
+        if (response.isRight && ([response.right.value length] > 0)) {
+            LOG(@"Successfully reported app open, response: %@", response.right.value);
             [[AdMobHelper adMobAppOpenReportedFilePath] touchFile];
         }
     } else {

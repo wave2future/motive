@@ -1,5 +1,24 @@
 #import "MVHttp.h"
 #import "MVLog.h"
+
+@implementation NSDataToNSString
+- (id):(NSData *)arg {
+	assert([arg isKindOfClass:[NSData class]]);
+	return [[[NSString alloc] initWithData:arg encoding:NSUTF8StringEncoding] autorelease];
+}
+@end
+
+@implementation NSDataToUIImage
+- (id):(NSData *)arg {
+	assert([arg isKindOfClass:[NSData class]]);	
+	return [UIImage imageWithData:arg];
+}
+@end
+
+@interface MVHttp (privvy)
++ (NSData *)sendSynchronousRequest:(NSURLRequest*)request returningResponse:(NSURLResponse **)response error:(NSError **)error;
+@end
+
 @implementation MVHttp
 
 static NSTimeInterval MVRequestTimeoutInterval = 60.0;
@@ -32,22 +51,25 @@ static NSInteger MVDefaultStatusCode = 0;
 }
 
 + (MVEither *)sendSynchronousRequest:(NSURLRequest *)request {
+	return [self sendSynchronousRequest:request withDataMapper:[[[NSDataToNSString alloc] init] autorelease]];
+}
+
++ (MVEither *)sendSynchronousRequest:(NSURLRequest *)request withDataMapper:(id <MVDataMapper>)dataMapper {
     NSURLResponse *response;
     NSError *error;
-    NSString *content = [MVHttp sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSData *content = [MVHttp sendSynchronousRequest:request returningResponse:&response error:&error];
 	if (error == nil && [MVHttp statusCodeForResponse:response] == MVHttpOkStatusCode) {
         LOG(@"Request succeeded, raw response content: %@", content);
-        return [MVEither rightWithValue:content];
+        return [MVEither rightWithValue:[dataMapper :content]];
     } else {
         LOG(@"Request failed with: '%d - %@', error: %@, raw response content: %@",
             [MVHttp statusCodeForResponse:response], [MVHttp stringForStatusCodeForResponse:response], [error localizedDescription], content);
         return [MVEither leftWithValue:error];
-    }    
+    }
 }
 
-+ (NSString *)sendSynchronousRequest:(NSURLRequest*)request returningResponse:(NSURLResponse **)response error:(NSError **)error {
-    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:response error:error];
-    return [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
++ (NSData *)sendSynchronousRequest:(NSURLRequest*)request returningResponse:(NSURLResponse **)response error:(NSError **)error {
+    return [NSURLConnection sendSynchronousRequest:request returningResponse:response error:error];
 }
 
 // TODO This is just a  map . intersperse or maybe a foldL, pull it into a category on NSDictionary.
