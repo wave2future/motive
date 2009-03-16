@@ -6,6 +6,6 @@
 READ BOOL isEmpty;
 READ BOOL isNotEmpty;
 
-- (NSString *)stringWithData:(NSData *)data;
++ (NSString *)stringWithData:(NSData *)data;
 
 @end
