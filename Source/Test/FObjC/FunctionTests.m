@@ -63,7 +63,7 @@
 - (void)testLiftFunction {
 	NSArray *a = NSARRAY(@"first");
 	id <FKFunction> f = [FKFunction functionFromSelector:@selector(uppercaseString)];
-	id <FKFunction> lifted = [NSArray lift:f];
+	id <FKFunction> lifted = [NSArray liftFunction:f];
 	NSArray *result = [lifted :a];
 	STAssertEqualObjects(NSARRAY(@"FIRST"), result, nil);
 }

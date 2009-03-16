@@ -10,5 +10,5 @@ READ BOOL isNotEmpty;
 - (BOOL)all:(SEL)predicate;
 - (NSArray *)map:(id <FKFunction>)f;
 
-+ (id <FKFunction>)lift:(id <FKFunction>)f;
++ (id <FKFunction>)liftFunction:(id <FKFunction>)f;
 @end

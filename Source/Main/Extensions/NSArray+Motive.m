@@ -69,7 +69,7 @@
 	return [NSArray arrayWithArray:r];
 }
 
-+ (id <FKFunction>)lift:(id <FKFunction>)f {
++ (id <FKFunction>)liftFunction:(id <FKFunction>)f {
 	return [[[FKLiftedFunction alloc] initWithF:f] autorelease];
 }
 @end
