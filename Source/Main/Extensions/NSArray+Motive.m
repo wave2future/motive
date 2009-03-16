@@ -7,13 +7,6 @@
 //@end
 //
 //@implementation NSArray (FK)
-//- (NSArray *)map:(id <FKFunction>)f {
-//	NSMutableArray *r = [NSMutableArray arrayWithCapacity:[self count]];
-//	for (id o in self) {
-//		[r addObject:[f :o]];
-//	}
-//	return [NSArray arrayWithArray:r];
-//}
 //- (NSArray *)zip:(NSArray *)other {
 //	assert([other count] == [self count]);
 //	NSMutableArray *r = [NSMutableArray arrayWithCapacity:[self count]];
@@ -42,6 +35,14 @@
 		}
 	}
 	return YES;
+}
+
+- (NSArray *)map:(id <FKFunction>)f {
+	NSMutableArray *r = [NSMutableArray arrayWithCapacity:[self count]];
+	for (id o in self) {
+		[r addObject:[f :o]];
+	}
+	return [NSArray arrayWithArray:r];
 }
 
 @end

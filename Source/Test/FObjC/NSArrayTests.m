@@ -12,5 +12,9 @@
 	BOOL v = [NSARRAY([NSArray array]) all:@selector(isNotEmpty)];
 	STAssertFalse(v, nil);
 }
+
+- (void)testMap {
+	STAssertEqualObjects([NSARRAY(@"test") map:[FKFunction functionFromSelector:@selector(uppercaseString)]], NSARRAY(@"TEST"), nil); 
+}
 @end
 
