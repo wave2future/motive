@@ -21,7 +21,6 @@
 		E23432610F6F12F80018BE5D /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E234323B0F6F12F80018BE5D /* NSString+File.m */; };
 		E23432620F6F12F80018BE5D /* Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E234323C0F6F12F80018BE5D /* Motive.h */; };
 		E23432630F6F12F80018BE5D /* motive_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E234323D0F6F12F80018BE5D /* motive_Prefix.pch */; };
-		E23432640F6F12F80018BE5D /* MVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E234323E0F6F12F80018BE5D /* MVLog.h */; };
 		E23432650F6F12F80018BE5D /* MVMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E234323F0F6F12F80018BE5D /* MVMacros.h */; };
 		E23432680F6F12F80018BE5D /* AdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23432170F6F12F80018BE5D /* AdMobHelper.m */; };
 		E23432690F6F12F80018BE5D /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E234321A0F6F12F80018BE5D /* AVAudioPlayer+Motive.m */; };
@@ -29,6 +28,7 @@
 		E234326B0F6F12F80018BE5D /* NSDictionary+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E234321F0F6F12F80018BE5D /* NSDictionary+Motive.m */; };
 		E234326C0F6F12F80018BE5D /* NSString+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23432210F6F12F80018BE5D /* NSString+Motive.m */; };
 		E23432760F6F12F80018BE5D /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E234323B0F6F12F80018BE5D /* NSString+File.m */; };
+		E23435500F6F19960018BE5D /* MVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E234354F0F6F19960018BE5D /* MVLog.h */; };
 		E23DB6C70F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */; };
 		E23DB6C80F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */; };
 		E23DB6C90F4D0263005C8EDA /* NSData+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C70F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.h */; };
@@ -77,8 +77,8 @@
 		E234323B0F6F12F80018BE5D /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
 		E234323C0F6F12F80018BE5D /* Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motive.h; sourceTree = "<group>"; };
 		E234323D0F6F12F80018BE5D /* motive_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motive_Prefix.pch; sourceTree = "<group>"; };
-		E234323E0F6F12F80018BE5D /* MVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLog.h; sourceTree = "<group>"; };
 		E234323F0F6F12F80018BE5D /* MVMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMacros.h; sourceTree = "<group>"; };
+		E234354F0F6F19960018BE5D /* MVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLog.h; sourceTree = "<group>"; };
 		E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
 		E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
 		E23DB5C70F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 				E23432390F6F12F80018BE5D /* IO */,
 				E234323C0F6F12F80018BE5D /* Motive.h */,
 				E234323D0F6F12F80018BE5D /* motive_Prefix.pch */,
-				E234323E0F6F12F80018BE5D /* MVLog.h */,
+				E234354F0F6F19960018BE5D /* MVLog.h */,
 				E234323F0F6F12F80018BE5D /* MVMacros.h */,
 			);
 			path = Main;
@@ -347,8 +347,8 @@
 				E23432600F6F12F80018BE5D /* NSString+File.h in Headers */,
 				E23432620F6F12F80018BE5D /* Motive.h in Headers */,
 				E23432630F6F12F80018BE5D /* motive_Prefix.pch in Headers */,
-				E23432640F6F12F80018BE5D /* MVLog.h in Headers */,
 				E23432650F6F12F80018BE5D /* MVMacros.h in Headers */,
+				E23435500F6F19960018BE5D /* MVLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

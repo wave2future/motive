@@ -1,11 +1,12 @@
 #import "AdMobHelper.h"
 #import "NSString+File.h"
-#import "MVHttp.h"
+#import "NSString+Motive.h"
 #import "MVLog.h"
 
 @interface AdMobHelper (AdMobHelperPrivate)
 + (NSString *)adMobUrlWithAdditionalQueryStringParams:(NSString *)queryStringParams;
 + (void)reportAppStartToAdMobWithUrl:(NSString *)url;
++ (NSInteger)statusCodeForResponse:(NSURLResponse *)response;
 @end
 
 @implementation AdMobHelper
@@ -32,14 +33,20 @@
     if (![[AdMobHelper adMobAppOpenReportedFilePath] fileExists]) {
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
         LOG(@"Reporting initial application start to AdMob on URL %@", [[request URL] absoluteString]);
-        MVEither *response = [MVHttp sendSynchronousRequest:request];
-        if (response.isRight && ([response.right.value length] > 0)) {
+        NSURLResponse *response;
+        NSError *error;
+        NSString *content = [NSString stringWithContentsOfURL:[request URL] encoding:NSUTF8StringEncoding error:&error];
+        if (error == nil && [self statusCodeForResponse:response] == 200 && [content isNotEmpty]) {
             LOG(@"Successfully reported app open, response: %@", response.right.value);
             [[AdMobHelper adMobAppOpenReportedFilePath] touchFile];
         }
     } else {
         LOG(@"App has already been reported");      
     }
+}
+
++ (NSInteger)statusCodeForResponse:(NSURLResponse *)response {
+	return response != nil && [response isKindOfClass:[NSHTTPURLResponse class]] ? [((NSHTTPURLResponse *) response) statusCode] : 0;
 }
 
 @end
