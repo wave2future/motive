@@ -6,4 +6,6 @@
 READ BOOL isEmpty;
 READ BOOL isNotEmpty;
 
+- (BOOL)all:(SEL)predicate;
+
 @end

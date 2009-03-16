@@ -35,4 +35,13 @@
     return !self.isEmpty;
 }
 
+- (BOOL)all:(SEL)predicate {
+	for (id object in self) {
+		if (![object performSelector:predicate]) {
+			return NO;
+		}
+	}
+	return YES;
+}
+
 @end
