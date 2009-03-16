@@ -1,1 +1,10 @@
-iPhone and Objective-C utils.
+General iPhone and Objective-C utils.
+
+
+* Setup *
+
+This project contains submodules, you will need to initialise them before your project will work:
+
+$ git submodule init
+$ git submodule update
+
