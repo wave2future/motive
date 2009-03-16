@@ -4,6 +4,8 @@
 
 + (MVOption *)fromNil:(id)maybeNil;
 
++ (MVOption *)fromNil:(id)maybeNil ofType:(Class)cls;
+
 + (MVOption *)none;
 
 + (MVOption *)some:(id)someObject;

@@ -34,6 +34,11 @@
     return maybeNil == nil ? [MVOption none] : [MVOption some:maybeNil];
 }
 
++ (MVOption *)fromNil:(id)maybeNil ofType:(Class)cls {
+	//TODO add bind and re-use fromNil
+	return (maybeNil != nil && [maybeNil isKindOfClass:cls]) ? [MVOption some:maybeNil] : [MVOption none];
+}
+
 + (MVOption *)none {
     return [[[MVNone alloc] init] autorelease];
 }

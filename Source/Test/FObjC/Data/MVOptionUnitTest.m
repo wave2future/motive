@@ -40,4 +40,10 @@
 	STAssertEqualObjects([r some], description, nil);
 }
 
+- (void)testTypes {
+	STAssertTrue([[MVOption fromNil:@"54" ofType:[NSString class]] isSome], nil);
+	STAssertTrue([[MVOption fromNil:nil ofType:[NSString class]] isNone], nil);
+	STAssertTrue([[MVOption fromNil:@"54" ofType:[NSArray class]] isNone], nil);
+}
+
 @end
