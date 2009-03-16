@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "FKFunction.h"
 
 @interface MVOption : NSObject
 
@@ -30,6 +31,8 @@
 // Note. Returns this either (i.e. self) if the given |object| does not response to |selector|.
 - (MVOption *)mapWithSelector:(SEL)selector onObject:(id)object;
 
+// Maps the given function across the option
+- (MVOption *)map:(id <FKFunction>)f;
 @end
 
 @interface MVNone : MVOption

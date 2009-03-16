@@ -16,5 +16,4 @@
 // eg. [target selector:arg]
 + (id <FKFunction>)functionFromSelector:(SEL)s target:(NSObject *)target;
 
-+ (id <FKFunction>)lift:(id <FKFunction>)f;
 @end

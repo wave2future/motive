@@ -17,6 +17,30 @@
 //}
 //@end
 
+@interface FKLiftedFunction : NSObject <FKFunction> {
+	id <FKFunction> f;
+}
+- (FKLiftedFunction *)initWithF:(FKFunction *)f;
+@end
+@implementation FKLiftedFunction
+- (FKLiftedFunction *)initWithF:(FKFunction *)inF {
+	if ((self = [super init])) {
+		f = [inF retain];
+	}
+	return self;
+}
+
+- (id):(id)arg {
+	assert([arg isKindOfClass:[NSArray class]]);
+	NSArray *argArray = arg;
+	NSMutableArray *arr = [NSMutableArray arrayWithCapacity:[arg count]];
+	for (id obj in argArray) {
+		[arr addObject:[f :obj]];
+	}
+	return arr;
+}
+
+@end
 
 @implementation NSArray (MotiveExtensions)
 
@@ -45,4 +69,7 @@
 	return [NSArray arrayWithArray:r];
 }
 
++ (id <FKFunction>)lift:(id <FKFunction>)f {
+	return [[[FKLiftedFunction alloc] initWithF:f] autorelease];
+}
 @end

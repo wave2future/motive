@@ -1,4 +1,5 @@
 #import "GTMSenTestCase.h"
+#import "NSArray+Motive.h"
 #import "FKFunction.h"
 #import "FKEffect.h"
 #import "MVLog.h"
@@ -62,7 +63,7 @@
 - (void)testLiftFunction {
 	NSArray *a = NSARRAY(@"first");
 	id <FKFunction> f = [FKFunction functionFromSelector:@selector(uppercaseString)];
-	id <FKFunction> lifted = [FKFunction lift:f];
+	id <FKFunction> lifted = [NSArray lift:f];
 	NSArray *result = [lifted :a];
 	STAssertEqualObjects(NSARRAY(@"FIRST"), result, nil);
 }

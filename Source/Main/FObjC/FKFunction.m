@@ -43,43 +43,12 @@
 }
 @end
 
-@interface FKLiftedFunction : NSObject <FKFunction> {
-	id <FKFunction> f;
-}
-- (FKLiftedFunction *)initWithF:(FKFunction *)f;
-@end
-@implementation FKLiftedFunction
-- (FKLiftedFunction *)initWithF:(FKFunction *)inF {
-	if ((self = [super init])) {
-		f = [inF retain];
-	}
-	return self;
-}
-
-- (id):(id)arg {
-	//TODO: type check
-	NSArray *argArray = arg;
-	NSMutableArray *arr = [NSMutableArray arrayWithCapacity:[arg count]];
-	for (id obj in argArray) {
-		[arr addObject:[f :obj]];
-	}
-	return arr;
-}
-
-@end
-
-
-
 @implementation FKFunction
 + (id <FKFunction>)functionFromSelector:(SEL)s {
 	return [[[FKFunctionFromSelector alloc] initWithSelector:s] autorelease];
 }
 + (id <FKFunction>)functionFromSelector:(SEL)s target:(NSObject *)target {
 	return [[[FKFunctionFromSelectorWithTarget alloc] initWithSelector:s target:target] autorelease];
-}
-
-+ (id <FKFunction>)lift:(id <FKFunction>)f {
-	return [[[FKLiftedFunction alloc] initWithF:f] autorelease];
 }
 @end
 

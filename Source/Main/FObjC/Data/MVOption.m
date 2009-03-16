@@ -75,4 +75,8 @@
 	return [self isSome] && [object respondsToSelector:selector] ? [MVOption some:[object performSelector:selector withObject:[self some]]] : self;
 }
 
+- (MVOption *)map:(id <FKFunction>)f {
+	return [self isSome] ? [MVOption some:[f :[self  some]]] : self;
+}
+
 @end
