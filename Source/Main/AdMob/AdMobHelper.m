@@ -37,7 +37,7 @@
         NSError *error;
         NSString *content = [NSString stringWithContentsOfURL:[request URL] encoding:NSUTF8StringEncoding error:&error];
         if (error == nil && [self statusCodeForResponse:response] == 200 && [content isNotEmpty]) {
-            LOG(@"Successfully reported app open, response: %@", response.right.value);
+            LOG(@"Successfully reported app open, response: %@", content);
             [[AdMobHelper adMobAppOpenReportedFilePath] touchFile];
         }
     } else {
