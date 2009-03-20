@@ -14,4 +14,16 @@
     return [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
 }
 
+- (NSData *)asData {
+    return [self dataUsingEncoding:NSStringEncodingConversionAllowLossy];
+}
+
+- (NSString *)trim {
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+}
+
+- (NSString *)trimNewLines {
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
 @end

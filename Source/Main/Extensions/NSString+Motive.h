@@ -8,4 +8,10 @@ READ BOOL isNotEmpty;
 
 + (NSString *)stringWithData:(NSData *)data;
 
+- (NSData *)asData;
+
+- (NSString *)trim;
+
+- (NSString *)trimNewLines;
+
 @end
