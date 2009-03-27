@@ -10,4 +10,12 @@
     return !self.isEmpty;
 }
 
++ (NSArray *)repeat:(id)object times:(NSUInteger)times {
+	NSMutableArray *r = [NSMutableArray arrayWithCapacity:times];
+	for (int i = 0; i < times; ++i) {
+		[r addObject:object];
+	}
+	return r;
+}
+
 @end

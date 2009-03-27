@@ -5,5 +5,6 @@
 
 READ BOOL isEmpty;
 READ BOOL isNotEmpty;
++ (NSArray *)repeat:(id)object times:(NSUInteger)times;
 
 @end
