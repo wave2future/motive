@@ -31,8 +31,6 @@
 		E23435500F6F19960018BE5D /* MVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E234354F0F6F19960018BE5D /* MVLog.h */; };
 		E23DB6C70F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */; };
 		E23DB6C80F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */; };
-		E23DB6C90F4D0263005C8EDA /* NSData+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C70F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.h */; };
-		E23DB6CA0F4D0263005C8EDA /* NSData+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C80F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.m */; };
 		E23DB6CB0F4D0263005C8EDA /* NSSet+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C90F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.h */; };
 		E23DB6CC0F4D0263005C8EDA /* NSSet+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5CA0F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.m */; };
 		E23DB6CD0F4D0263005C8EDA /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5CC0F4D0262005C8EDA /* FMDatabase.h */; };
@@ -81,8 +79,6 @@
 		E234354F0F6F19960018BE5D /* MVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLog.h; sourceTree = "<group>"; };
 		E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
 		E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
-		E23DB5C70F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
-		E23DB5C80F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
 		E23DB5C90F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
 		E23DB5CA0F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
 		E23DB5CC0F4D0262005C8EDA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -241,8 +237,6 @@
 			children = (
 				E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */,
 				E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */,
-				E23DB5C70F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.h */,
-				E23DB5C80F4D0262005C8EDA /* NSData+CocoaDevUsersAdditions.m */,
 				E23DB5C90F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.h */,
 				E23DB5CA0F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.m */,
 			);
@@ -327,7 +321,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23DB6C70F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.h in Headers */,
-				E23DB6C90F4D0263005C8EDA /* NSData+CocoaDevUsersAdditions.h in Headers */,
 				E23DB6CB0F4D0263005C8EDA /* NSSet+CocoaDevUsersAdditions.h in Headers */,
 				E23DB6CD0F4D0263005C8EDA /* FMDatabase.h in Headers */,
 				E23DB6CF0F4D0263005C8EDA /* FMDatabaseAdditions.h in Headers */,
@@ -441,7 +434,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23DB6C80F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */,
-				E23DB6CA0F4D0263005C8EDA /* NSData+CocoaDevUsersAdditions.m in Sources */,
 				E23DB6CC0F4D0263005C8EDA /* NSSet+CocoaDevUsersAdditions.m in Sources */,
 				E23DB6CE0F4D0263005C8EDA /* FMDatabase.m in Sources */,
 				E23DB6D00F4D0263005C8EDA /* FMDatabaseAdditions.m in Sources */,
@@ -525,7 +517,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos2.2;
 			};
@@ -538,7 +530,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos2.2;
 			};
