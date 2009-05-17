@@ -1,5 +1,5 @@
 // Motive prelude. Include this to get all Motive files.
-#import "AdMobHelper.h"
+#import "MVAdMobHelper.h"
 #import "AVAudioPlayer+Motive.h"
 #import "MVLog.h"
 #import "MVMacros.h"
