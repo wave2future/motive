@@ -7,26 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E23432430F6F12F80018BE5D /* AdMobHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E23432160F6F12F80018BE5D /* AdMobHelper.h */; };
-		E23432440F6F12F80018BE5D /* AdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23432170F6F12F80018BE5D /* AdMobHelper.m */; };
-		E23432470F6F12F80018BE5D /* NSArray+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E234321C0F6F12F80018BE5D /* NSArray+Motive.h */; };
-		E23432480F6F12F80018BE5D /* NSArray+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E234321D0F6F12F80018BE5D /* NSArray+Motive.m */; };
-		E23432490F6F12F80018BE5D /* NSDictionary+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E234321E0F6F12F80018BE5D /* NSDictionary+Motive.h */; };
-		E234324A0F6F12F80018BE5D /* NSDictionary+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E234321F0F6F12F80018BE5D /* NSDictionary+Motive.m */; };
-		E234324B0F6F12F80018BE5D /* NSString+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E23432200F6F12F80018BE5D /* NSString+Motive.h */; };
-		E234324C0F6F12F80018BE5D /* NSString+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23432210F6F12F80018BE5D /* NSString+Motive.m */; };
-		E23432600F6F12F80018BE5D /* NSString+File.h in Headers */ = {isa = PBXBuildFile; fileRef = E234323A0F6F12F80018BE5D /* NSString+File.h */; };
-		E23432610F6F12F80018BE5D /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E234323B0F6F12F80018BE5D /* NSString+File.m */; };
-		E23432620F6F12F80018BE5D /* Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E234323C0F6F12F80018BE5D /* Motive.h */; };
-		E23432630F6F12F80018BE5D /* motive_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E234323D0F6F12F80018BE5D /* motive_Prefix.pch */; };
-		E23432650F6F12F80018BE5D /* MVMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E234323F0F6F12F80018BE5D /* MVMacros.h */; };
-		E23432680F6F12F80018BE5D /* AdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23432170F6F12F80018BE5D /* AdMobHelper.m */; };
-		E23432690F6F12F80018BE5D /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E234321A0F6F12F80018BE5D /* AVAudioPlayer+Motive.m */; };
-		E234326A0F6F12F80018BE5D /* NSArray+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E234321D0F6F12F80018BE5D /* NSArray+Motive.m */; };
-		E234326B0F6F12F80018BE5D /* NSDictionary+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E234321F0F6F12F80018BE5D /* NSDictionary+Motive.m */; };
-		E234326C0F6F12F80018BE5D /* NSString+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E23432210F6F12F80018BE5D /* NSString+Motive.m */; };
-		E23432760F6F12F80018BE5D /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E234323B0F6F12F80018BE5D /* NSString+File.m */; };
-		E23435500F6F19960018BE5D /* MVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E234354F0F6F19960018BE5D /* MVLog.h */; };
 		E23DB6C70F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */; };
 		E23DB6C80F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */; };
 		E23DB6CB0F4D0263005C8EDA /* NSSet+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C90F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.h */; };
@@ -43,38 +23,44 @@
 		E23DB7320F4D0263005C8EDA /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB64A0F4D0262005C8EDA /* GTMDefines.h */; };
 		E23DB7380F4D0263005C8EDA /* GTMIPhoneUnitTestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6590F4D0262005C8EDA /* GTMIPhoneUnitTestDelegate.h */; };
 		E23DB73F0F4D0263005C8EDA /* GTMSenTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6600F4D0262005C8EDA /* GTMSenTestCase.h */; };
-		E23DB7660F4D0263005C8EDA /* ThreadUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6C30F4D0263005C8EDA /* ThreadUtil.h */; };
-		E23DB7670F4D0263005C8EDA /* ThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */; };
+		E23DB7660F4D0263005C8EDA /* MVThreadUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6C30F4D0263005C8EDA /* MVThreadUtil.h */; };
+		E23DB7670F4D0263005C8EDA /* MVThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6C40F4D0263005C8EDA /* MVThreadUtil.m */; };
 		E23DBE8F0F4E25F3005C8EDA /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB65A0F4D0262005C8EDA /* GTMIPhoneUnitTestDelegate.m */; };
 		E23DBE900F4E25F3005C8EDA /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB65B0F4D0262005C8EDA /* GTMIPhoneUnitTestMain.m */; };
 		E23DBE910F4E25F3005C8EDA /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6610F4D0262005C8EDA /* GTMSenTestCase.m */; };
-		E23DBEAC0F4E26DF005C8EDA /* ThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */; };
+		E23DBEAC0F4E26DF005C8EDA /* MVThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6C40F4D0263005C8EDA /* MVThreadUtil.m */; };
 		E23DBF6A0F4E2800005C8EDA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23DBF690F4E2800005C8EDA /* AVFoundation.framework */; };
 		E23DBF6B0F4E2800005C8EDA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23DBF690F4E2800005C8EDA /* AVFoundation.framework */; };
 		E23DBF6D0F4E2817005C8EDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23DBF6C0F4E2817005C8EDA /* UIKit.framework */; };
 		E23DBF6E0F4E2817005C8EDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23DBF6C0F4E2817005C8EDA /* UIKit.framework */; };
 		E23DC0050F4E2852005C8EDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		E2BCDF590FBFE22000EBB41F /* MVAdMobHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDF490FBFE22000EBB41F /* MVAdMobHelper.h */; };
+		E2BCDF5A0FBFE22000EBB41F /* MVAdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF4A0FBFE22000EBB41F /* MVAdMobHelper.m */; };
+		E2BCDF5B0FBFE22000EBB41F /* AVAudioPlayer+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDF4B0FBFE22000EBB41F /* AVAudioPlayer+Motive.h */; };
+		E2BCDF5C0FBFE22000EBB41F /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF4C0FBFE22000EBB41F /* AVAudioPlayer+Motive.m */; };
+		E2BCDF5D0FBFE22000EBB41F /* MVPrelude.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDF4D0FBFE22000EBB41F /* MVPrelude.h */; };
+		E2BCDF5E0FBFE22000EBB41F /* motive_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDF4E0FBFE22000EBB41F /* motive_Prefix.pch */; };
+		E2BCDF5F0FBFE22000EBB41F /* MVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDF4F0FBFE22000EBB41F /* MVLog.h */; };
+		E2BCDF600FBFE22000EBB41F /* MVMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDF500FBFE22000EBB41F /* MVMacros.h */; };
+		E2BCDF610FBFE22000EBB41F /* NSArray+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDF510FBFE22000EBB41F /* NSArray+Motive.h */; };
+		E2BCDF620FBFE22000EBB41F /* NSArray+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF520FBFE22000EBB41F /* NSArray+Motive.m */; };
+		E2BCDF630FBFE22000EBB41F /* NSDictionary+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDF530FBFE22000EBB41F /* NSDictionary+Motive.h */; };
+		E2BCDF640FBFE22000EBB41F /* NSDictionary+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF540FBFE22000EBB41F /* NSDictionary+Motive.m */; };
+		E2BCDF650FBFE22000EBB41F /* NSString+File.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDF550FBFE22000EBB41F /* NSString+File.h */; };
+		E2BCDF660FBFE22000EBB41F /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF560FBFE22000EBB41F /* NSString+File.m */; };
+		E2BCDF670FBFE22000EBB41F /* NSString+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDF570FBFE22000EBB41F /* NSString+Motive.h */; };
+		E2BCDF680FBFE22000EBB41F /* NSString+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF580FBFE22000EBB41F /* NSString+Motive.m */; };
+		E2BCDF690FBFE22000EBB41F /* MVAdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF4A0FBFE22000EBB41F /* MVAdMobHelper.m */; };
+		E2BCDF6A0FBFE22000EBB41F /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF4C0FBFE22000EBB41F /* AVAudioPlayer+Motive.m */; };
+		E2BCDF6B0FBFE22000EBB41F /* NSArray+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF520FBFE22000EBB41F /* NSArray+Motive.m */; };
+		E2BCDF6C0FBFE22000EBB41F /* NSDictionary+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF540FBFE22000EBB41F /* NSDictionary+Motive.m */; };
+		E2BCDF6D0FBFE22000EBB41F /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF560FBFE22000EBB41F /* NSString+File.m */; };
+		E2BCDF6E0FBFE22000EBB41F /* NSString+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDF580FBFE22000EBB41F /* NSString+Motive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E23432160F6F12F80018BE5D /* AdMobHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobHelper.h; sourceTree = "<group>"; };
-		E23432170F6F12F80018BE5D /* AdMobHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMobHelper.m; sourceTree = "<group>"; };
-		E23432190F6F12F80018BE5D /* AVAudioPlayer+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+Motive.h"; sourceTree = "<group>"; };
-		E234321A0F6F12F80018BE5D /* AVAudioPlayer+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+Motive.m"; sourceTree = "<group>"; };
-		E234321C0F6F12F80018BE5D /* NSArray+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Motive.h"; sourceTree = "<group>"; };
-		E234321D0F6F12F80018BE5D /* NSArray+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Motive.m"; sourceTree = "<group>"; };
-		E234321E0F6F12F80018BE5D /* NSDictionary+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Motive.h"; sourceTree = "<group>"; };
-		E234321F0F6F12F80018BE5D /* NSDictionary+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Motive.m"; sourceTree = "<group>"; };
-		E23432200F6F12F80018BE5D /* NSString+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Motive.h"; sourceTree = "<group>"; };
-		E23432210F6F12F80018BE5D /* NSString+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Motive.m"; sourceTree = "<group>"; };
-		E234323A0F6F12F80018BE5D /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
-		E234323B0F6F12F80018BE5D /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
-		E234323C0F6F12F80018BE5D /* Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motive.h; sourceTree = "<group>"; };
-		E234323D0F6F12F80018BE5D /* motive_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motive_Prefix.pch; sourceTree = "<group>"; };
-		E234323F0F6F12F80018BE5D /* MVMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMacros.h; sourceTree = "<group>"; };
-		E234354F0F6F19960018BE5D /* MVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLog.h; sourceTree = "<group>"; };
 		E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
 		E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
 		E23DB5C90F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
@@ -95,11 +81,27 @@
 		E23DB65B0F4D0262005C8EDA /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestMain.m; sourceTree = "<group>"; };
 		E23DB6600F4D0262005C8EDA /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
 		E23DB6610F4D0262005C8EDA /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
-		E23DB6C30F4D0263005C8EDA /* ThreadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadUtil.h; sourceTree = "<group>"; };
-		E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadUtil.m; sourceTree = "<group>"; };
+		E23DB6C30F4D0263005C8EDA /* MVThreadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVThreadUtil.h; sourceTree = "<group>"; };
+		E23DB6C40F4D0263005C8EDA /* MVThreadUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVThreadUtil.m; sourceTree = "<group>"; };
 		E23DBE720F4E2549005C8EDA /* Unit Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23DBF690F4E2800005C8EDA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E23DBF6C0F4E2817005C8EDA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E2BCDF490FBFE22000EBB41F /* MVAdMobHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVAdMobHelper.h; sourceTree = "<group>"; };
+		E2BCDF4A0FBFE22000EBB41F /* MVAdMobHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVAdMobHelper.m; sourceTree = "<group>"; };
+		E2BCDF4B0FBFE22000EBB41F /* AVAudioPlayer+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+Motive.h"; sourceTree = "<group>"; };
+		E2BCDF4C0FBFE22000EBB41F /* AVAudioPlayer+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+Motive.m"; sourceTree = "<group>"; };
+		E2BCDF4D0FBFE22000EBB41F /* MVPrelude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPrelude.h; sourceTree = "<group>"; };
+		E2BCDF4E0FBFE22000EBB41F /* motive_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motive_Prefix.pch; sourceTree = "<group>"; };
+		E2BCDF4F0FBFE22000EBB41F /* MVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLog.h; sourceTree = "<group>"; };
+		E2BCDF500FBFE22000EBB41F /* MVMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMacros.h; sourceTree = "<group>"; };
+		E2BCDF510FBFE22000EBB41F /* NSArray+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Motive.h"; sourceTree = "<group>"; };
+		E2BCDF520FBFE22000EBB41F /* NSArray+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Motive.m"; sourceTree = "<group>"; };
+		E2BCDF530FBFE22000EBB41F /* NSDictionary+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Motive.h"; sourceTree = "<group>"; };
+		E2BCDF540FBFE22000EBB41F /* NSDictionary+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Motive.m"; sourceTree = "<group>"; };
+		E2BCDF550FBFE22000EBB41F /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
+		E2BCDF560FBFE22000EBB41F /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
+		E2BCDF570FBFE22000EBB41F /* NSString+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Motive.h"; sourceTree = "<group>"; };
+		E2BCDF580FBFE22000EBB41F /* NSString+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Motive.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,56 +169,9 @@
 		E23432140F6F12F80018BE5D /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				E23432150F6F12F80018BE5D /* AdMob */,
-				E23432180F6F12F80018BE5D /* AV */,
-				E234321B0F6F12F80018BE5D /* Extensions */,
-				E23432390F6F12F80018BE5D /* IO */,
-				E234323C0F6F12F80018BE5D /* Motive.h */,
-				E234323D0F6F12F80018BE5D /* motive_Prefix.pch */,
-				E234354F0F6F19960018BE5D /* MVLog.h */,
-				E234323F0F6F12F80018BE5D /* MVMacros.h */,
+				E2BCDF480FBFE22000EBB41F /* MV */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		E23432150F6F12F80018BE5D /* AdMob */ = {
-			isa = PBXGroup;
-			children = (
-				E23432160F6F12F80018BE5D /* AdMobHelper.h */,
-				E23432170F6F12F80018BE5D /* AdMobHelper.m */,
-			);
-			path = AdMob;
-			sourceTree = "<group>";
-		};
-		E23432180F6F12F80018BE5D /* AV */ = {
-			isa = PBXGroup;
-			children = (
-				E23432190F6F12F80018BE5D /* AVAudioPlayer+Motive.h */,
-				E234321A0F6F12F80018BE5D /* AVAudioPlayer+Motive.m */,
-			);
-			path = AV;
-			sourceTree = "<group>";
-		};
-		E234321B0F6F12F80018BE5D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				E234321C0F6F12F80018BE5D /* NSArray+Motive.h */,
-				E234321D0F6F12F80018BE5D /* NSArray+Motive.m */,
-				E234321E0F6F12F80018BE5D /* NSDictionary+Motive.h */,
-				E234321F0F6F12F80018BE5D /* NSDictionary+Motive.m */,
-				E23432200F6F12F80018BE5D /* NSString+Motive.h */,
-				E23432210F6F12F80018BE5D /* NSString+Motive.m */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		E23432390F6F12F80018BE5D /* IO */ = {
-			isa = PBXGroup;
-			children = (
-				E234323A0F6F12F80018BE5D /* NSString+File.h */,
-				E234323B0F6F12F80018BE5D /* NSString+File.m */,
-			);
-			path = IO;
 			sourceTree = "<group>";
 		};
 		E23DB5C30F4D0262005C8EDA /* External */ = {
@@ -305,10 +260,33 @@
 		E23DB6C20F4D0263005C8EDA /* Process */ = {
 			isa = PBXGroup;
 			children = (
-				E23DB6C30F4D0263005C8EDA /* ThreadUtil.h */,
-				E23DB6C40F4D0263005C8EDA /* ThreadUtil.m */,
+				E23DB6C30F4D0263005C8EDA /* MVThreadUtil.h */,
+				E23DB6C40F4D0263005C8EDA /* MVThreadUtil.m */,
 			);
 			path = Process;
+			sourceTree = "<group>";
+		};
+		E2BCDF480FBFE22000EBB41F /* MV */ = {
+			isa = PBXGroup;
+			children = (
+				E2BCDF490FBFE22000EBB41F /* MVAdMobHelper.h */,
+				E2BCDF4A0FBFE22000EBB41F /* MVAdMobHelper.m */,
+				E2BCDF4B0FBFE22000EBB41F /* AVAudioPlayer+Motive.h */,
+				E2BCDF4C0FBFE22000EBB41F /* AVAudioPlayer+Motive.m */,
+				E2BCDF4D0FBFE22000EBB41F /* MVPrelude.h */,
+				E2BCDF4E0FBFE22000EBB41F /* motive_Prefix.pch */,
+				E2BCDF4F0FBFE22000EBB41F /* MVLog.h */,
+				E2BCDF500FBFE22000EBB41F /* MVMacros.h */,
+				E2BCDF510FBFE22000EBB41F /* NSArray+Motive.h */,
+				E2BCDF520FBFE22000EBB41F /* NSArray+Motive.m */,
+				E2BCDF530FBFE22000EBB41F /* NSDictionary+Motive.h */,
+				E2BCDF540FBFE22000EBB41F /* NSDictionary+Motive.m */,
+				E2BCDF550FBFE22000EBB41F /* NSString+File.h */,
+				E2BCDF560FBFE22000EBB41F /* NSString+File.m */,
+				E2BCDF570FBFE22000EBB41F /* NSString+Motive.h */,
+				E2BCDF580FBFE22000EBB41F /* NSString+Motive.m */,
+			);
+			path = MV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,16 +307,17 @@
 				E23DB7320F4D0263005C8EDA /* GTMDefines.h in Headers */,
 				E23DB7380F4D0263005C8EDA /* GTMIPhoneUnitTestDelegate.h in Headers */,
 				E23DB73F0F4D0263005C8EDA /* GTMSenTestCase.h in Headers */,
-				E23DB7660F4D0263005C8EDA /* ThreadUtil.h in Headers */,
-				E23432430F6F12F80018BE5D /* AdMobHelper.h in Headers */,
-				E23432470F6F12F80018BE5D /* NSArray+Motive.h in Headers */,
-				E23432490F6F12F80018BE5D /* NSDictionary+Motive.h in Headers */,
-				E234324B0F6F12F80018BE5D /* NSString+Motive.h in Headers */,
-				E23432600F6F12F80018BE5D /* NSString+File.h in Headers */,
-				E23432620F6F12F80018BE5D /* Motive.h in Headers */,
-				E23432630F6F12F80018BE5D /* motive_Prefix.pch in Headers */,
-				E23432650F6F12F80018BE5D /* MVMacros.h in Headers */,
-				E23435500F6F19960018BE5D /* MVLog.h in Headers */,
+				E23DB7660F4D0263005C8EDA /* MVThreadUtil.h in Headers */,
+				E2BCDF590FBFE22000EBB41F /* MVAdMobHelper.h in Headers */,
+				E2BCDF5B0FBFE22000EBB41F /* AVAudioPlayer+Motive.h in Headers */,
+				E2BCDF5D0FBFE22000EBB41F /* MVPrelude.h in Headers */,
+				E2BCDF5E0FBFE22000EBB41F /* motive_Prefix.pch in Headers */,
+				E2BCDF5F0FBFE22000EBB41F /* MVLog.h in Headers */,
+				E2BCDF600FBFE22000EBB41F /* MVMacros.h in Headers */,
+				E2BCDF610FBFE22000EBB41F /* NSArray+Motive.h in Headers */,
+				E2BCDF630FBFE22000EBB41F /* NSDictionary+Motive.h in Headers */,
+				E2BCDF650FBFE22000EBB41F /* NSString+File.h in Headers */,
+				E2BCDF670FBFE22000EBB41F /* NSString+Motive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,12 +414,13 @@
 				E23DB6CE0F4D0263005C8EDA /* FMDatabase.m in Sources */,
 				E23DB6D00F4D0263005C8EDA /* FMDatabaseAdditions.m in Sources */,
 				E23DB6D20F4D0263005C8EDA /* FMResultSet.m in Sources */,
-				E23DB7670F4D0263005C8EDA /* ThreadUtil.m in Sources */,
-				E23432440F6F12F80018BE5D /* AdMobHelper.m in Sources */,
-				E23432480F6F12F80018BE5D /* NSArray+Motive.m in Sources */,
-				E234324A0F6F12F80018BE5D /* NSDictionary+Motive.m in Sources */,
-				E234324C0F6F12F80018BE5D /* NSString+Motive.m in Sources */,
-				E23432610F6F12F80018BE5D /* NSString+File.m in Sources */,
+				E23DB7670F4D0263005C8EDA /* MVThreadUtil.m in Sources */,
+				E2BCDF5A0FBFE22000EBB41F /* MVAdMobHelper.m in Sources */,
+				E2BCDF5C0FBFE22000EBB41F /* AVAudioPlayer+Motive.m in Sources */,
+				E2BCDF620FBFE22000EBB41F /* NSArray+Motive.m in Sources */,
+				E2BCDF640FBFE22000EBB41F /* NSDictionary+Motive.m in Sources */,
+				E2BCDF660FBFE22000EBB41F /* NSString+File.m in Sources */,
+				E2BCDF680FBFE22000EBB41F /* NSString+Motive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,16 +428,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23DBEAC0F4E26DF005C8EDA /* ThreadUtil.m in Sources */,
+				E23DBEAC0F4E26DF005C8EDA /* MVThreadUtil.m in Sources */,
 				E23DBE8F0F4E25F3005C8EDA /* GTMIPhoneUnitTestDelegate.m in Sources */,
 				E23DBE900F4E25F3005C8EDA /* GTMIPhoneUnitTestMain.m in Sources */,
 				E23DBE910F4E25F3005C8EDA /* GTMSenTestCase.m in Sources */,
-				E23432680F6F12F80018BE5D /* AdMobHelper.m in Sources */,
-				E23432690F6F12F80018BE5D /* AVAudioPlayer+Motive.m in Sources */,
-				E234326A0F6F12F80018BE5D /* NSArray+Motive.m in Sources */,
-				E234326B0F6F12F80018BE5D /* NSDictionary+Motive.m in Sources */,
-				E234326C0F6F12F80018BE5D /* NSString+Motive.m in Sources */,
-				E23432760F6F12F80018BE5D /* NSString+File.m in Sources */,
+				E2BCDF690FBFE22000EBB41F /* MVAdMobHelper.m in Sources */,
+				E2BCDF6A0FBFE22000EBB41F /* AVAudioPlayer+Motive.m in Sources */,
+				E2BCDF6B0FBFE22000EBB41F /* NSArray+Motive.m in Sources */,
+				E2BCDF6C0FBFE22000EBB41F /* NSDictionary+Motive.m in Sources */,
+				E2BCDF6D0FBFE22000EBB41F /* NSString+File.m in Sources */,
+				E2BCDF6E0FBFE22000EBB41F /* NSString+Motive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +455,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Source/Main/motive_Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Source/Main/MV/motive_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

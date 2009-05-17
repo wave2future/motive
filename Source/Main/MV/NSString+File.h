@@ -3,6 +3,7 @@
 @interface NSString (FileExtensions)
 
 - (BOOL)touchFile;
+
 - (BOOL)fileExists;
 
 @end
