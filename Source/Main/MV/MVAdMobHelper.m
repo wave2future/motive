@@ -1,5 +1,4 @@
 #import "MVAdMobHelper.h"
-#import "NSString+File.h"
 #import "NSString+Motive.h"
 #import "MVLog.h"
 

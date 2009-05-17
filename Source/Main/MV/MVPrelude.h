@@ -1,4 +1,8 @@
-// Motive prelude. Include this to get all motive files.
+// Motive prelude. Include this to get all Motive files.
 #import "AdMobHelper.h"
 #import "AVAudioPlayer+Motive.h"
 #import "MVLog.h"
+#import "MVMacros.h"
+#import "NSArray+Motive.h"
+#import "NSDictionary+Motive.h"
+#import "NSString+Motive.h"

@@ -14,4 +14,9 @@ READ BOOL isNotEmpty;
 
 - (NSString *)trimNewLines;
 
+- (BOOL)touchFile;
+
+- (BOOL)fileExists;
+
+
 @end

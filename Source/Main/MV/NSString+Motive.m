@@ -26,4 +26,12 @@
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+- (BOOL)touchFile {
+    return [[NSFileManager defaultManager] createFileAtPath:self contents:nil attributes:nil];
+}
+
+- (BOOL)fileExists {
+    return [[NSFileManager defaultManager] fileExistsAtPath:self];
+}
+
 @end
