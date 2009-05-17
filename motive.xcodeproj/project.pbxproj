@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		E23432430F6F12F80018BE5D /* AdMobHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E23432160F6F12F80018BE5D /* AdMobHelper.h */; };
 		E23432440F6F12F80018BE5D /* AdMobHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23432170F6F12F80018BE5D /* AdMobHelper.m */; };
-		E23432450F6F12F80018BE5D /* AVAudioPlayer+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E23432190F6F12F80018BE5D /* AVAudioPlayer+Motive.h */; };
-		E23432460F6F12F80018BE5D /* AVAudioPlayer+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E234321A0F6F12F80018BE5D /* AVAudioPlayer+Motive.m */; };
 		E23432470F6F12F80018BE5D /* NSArray+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E234321C0F6F12F80018BE5D /* NSArray+Motive.h */; };
 		E23432480F6F12F80018BE5D /* NSArray+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E234321D0F6F12F80018BE5D /* NSArray+Motive.m */; };
 		E23432490F6F12F80018BE5D /* NSDictionary+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E234321E0F6F12F80018BE5D /* NSDictionary+Motive.h */; };
@@ -333,7 +331,6 @@
 				E23DB73F0F4D0263005C8EDA /* GTMSenTestCase.h in Headers */,
 				E23DB7660F4D0263005C8EDA /* ThreadUtil.h in Headers */,
 				E23432430F6F12F80018BE5D /* AdMobHelper.h in Headers */,
-				E23432450F6F12F80018BE5D /* AVAudioPlayer+Motive.h in Headers */,
 				E23432470F6F12F80018BE5D /* NSArray+Motive.h in Headers */,
 				E23432490F6F12F80018BE5D /* NSDictionary+Motive.h in Headers */,
 				E234324B0F6F12F80018BE5D /* NSString+Motive.h in Headers */,
@@ -440,7 +437,6 @@
 				E23DB6D20F4D0263005C8EDA /* FMResultSet.m in Sources */,
 				E23DB7670F4D0263005C8EDA /* ThreadUtil.m in Sources */,
 				E23432440F6F12F80018BE5D /* AdMobHelper.m in Sources */,
-				E23432460F6F12F80018BE5D /* AVAudioPlayer+Motive.m in Sources */,
 				E23432480F6F12F80018BE5D /* NSArray+Motive.m in Sources */,
 				E234324A0F6F12F80018BE5D /* NSDictionary+Motive.m in Sources */,
 				E234324C0F6F12F80018BE5D /* NSString+Motive.m in Sources */,
