@@ -7,16 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E23DB6C70F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */; };
-		E23DB6C80F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */; };
-		E23DB6CB0F4D0263005C8EDA /* NSSet+CocoaDevUsersAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5C90F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.h */; };
-		E23DB6CC0F4D0263005C8EDA /* NSSet+CocoaDevUsersAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5CA0F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.m */; };
-		E23DB6CD0F4D0263005C8EDA /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5CC0F4D0262005C8EDA /* FMDatabase.h */; };
-		E23DB6CE0F4D0263005C8EDA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5CD0F4D0262005C8EDA /* FMDatabase.m */; };
-		E23DB6CF0F4D0263005C8EDA /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5CE0F4D0262005C8EDA /* FMDatabaseAdditions.h */; };
-		E23DB6D00F4D0263005C8EDA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5CF0F4D0262005C8EDA /* FMDatabaseAdditions.m */; };
-		E23DB6D10F4D0263005C8EDA /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5D00F4D0262005C8EDA /* FMResultSet.h */; };
-		E23DB6D20F4D0263005C8EDA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB5D10F4D0262005C8EDA /* FMResultSet.m */; };
 		E23DB6D30F4D0263005C8EDA /* SynthesizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5D40F4D0262005C8EDA /* SynthesizeSingleton.h */; };
 		E23DB6E90F4D0263005C8EDA /* GTMDebugSelectorValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5F90F4D0262005C8EDA /* GTMDebugSelectorValidation.h */; };
 		E23DB7310F4D0263005C8EDA /* GTM_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6490F4D0262005C8EDA /* GTM_Prefix.pch */; };
@@ -61,17 +51,6 @@
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
-		E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
-		E23DB5C90F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+CocoaDevUsersAdditions.h"; sourceTree = "<group>"; };
-		E23DB5CA0F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+CocoaDevUsersAdditions.m"; sourceTree = "<group>"; };
-		E23DB5CC0F4D0262005C8EDA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		E23DB5CD0F4D0262005C8EDA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		E23DB5CE0F4D0262005C8EDA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		E23DB5CF0F4D0262005C8EDA /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		E23DB5D00F4D0262005C8EDA /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		E23DB5D10F4D0262005C8EDA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		E23DB5D20F4D0262005C8EDA /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		E23DB5D40F4D0262005C8EDA /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		E23DB5F90F4D0262005C8EDA /* GTMDebugSelectorValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDebugSelectorValidation.h; sourceTree = "<group>"; };
 		E23DB6490F4D0262005C8EDA /* GTM_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTM_Prefix.pch; sourceTree = "<group>"; };
@@ -179,37 +158,10 @@
 		E23DB5C30F4D0262005C8EDA /* External */ = {
 			isa = PBXGroup;
 			children = (
-				E23DB5C40F4D0262005C8EDA /* CocoaDev */,
-				E23DB5CB0F4D0262005C8EDA /* fmdb-r55 */,
 				E23DB5D30F4D0262005C8EDA /* Gallagher */,
 				E23DB5D50F4D0262005C8EDA /* google-toolbox-for-mac-1-5-1 */,
 			);
 			path = External;
-			sourceTree = "<group>";
-		};
-		E23DB5C40F4D0262005C8EDA /* CocoaDev */ = {
-			isa = PBXGroup;
-			children = (
-				E23DB5C50F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.h */,
-				E23DB5C60F4D0262005C8EDA /* NSArray+CocoaDevUsersAdditions.m */,
-				E23DB5C90F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.h */,
-				E23DB5CA0F4D0262005C8EDA /* NSSet+CocoaDevUsersAdditions.m */,
-			);
-			path = CocoaDev;
-			sourceTree = "<group>";
-		};
-		E23DB5CB0F4D0262005C8EDA /* fmdb-r55 */ = {
-			isa = PBXGroup;
-			children = (
-				E23DB5CC0F4D0262005C8EDA /* FMDatabase.h */,
-				E23DB5CD0F4D0262005C8EDA /* FMDatabase.m */,
-				E23DB5CE0F4D0262005C8EDA /* FMDatabaseAdditions.h */,
-				E23DB5CF0F4D0262005C8EDA /* FMDatabaseAdditions.m */,
-				E23DB5D00F4D0262005C8EDA /* FMResultSet.h */,
-				E23DB5D10F4D0262005C8EDA /* FMResultSet.m */,
-				E23DB5D20F4D0262005C8EDA /* LICENSE.txt */,
-			);
-			path = "fmdb-r55";
 			sourceTree = "<group>";
 		};
 		E23DB5D30F4D0262005C8EDA /* Gallagher */ = {
@@ -298,11 +250,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23DB6C70F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.h in Headers */,
-				E23DB6CB0F4D0263005C8EDA /* NSSet+CocoaDevUsersAdditions.h in Headers */,
-				E23DB6CD0F4D0263005C8EDA /* FMDatabase.h in Headers */,
-				E23DB6CF0F4D0263005C8EDA /* FMDatabaseAdditions.h in Headers */,
-				E23DB6D10F4D0263005C8EDA /* FMResultSet.h in Headers */,
 				E23DB6D30F4D0263005C8EDA /* SynthesizeSingleton.h in Headers */,
 				E23DB6E90F4D0263005C8EDA /* GTMDebugSelectorValidation.h in Headers */,
 				E23DB7310F4D0263005C8EDA /* GTM_Prefix.pch in Headers */,
@@ -411,11 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23DB6C80F4D0263005C8EDA /* NSArray+CocoaDevUsersAdditions.m in Sources */,
-				E23DB6CC0F4D0263005C8EDA /* NSSet+CocoaDevUsersAdditions.m in Sources */,
-				E23DB6CE0F4D0263005C8EDA /* FMDatabase.m in Sources */,
-				E23DB6D00F4D0263005C8EDA /* FMDatabaseAdditions.m in Sources */,
-				E23DB6D20F4D0263005C8EDA /* FMResultSet.m in Sources */,
 				E23DB7670F4D0263005C8EDA /* MVThreadUtil.m in Sources */,
 				E2BCDF5A0FBFE22000EBB41F /* MVAdMobHelper.m in Sources */,
 				E2BCDF5C0FBFE22000EBB41F /* AVAudioPlayer+Motive.m in Sources */,
