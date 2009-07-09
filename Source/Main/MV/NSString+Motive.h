@@ -1,5 +1,4 @@
 #import <Foundation/Foundation.h>
-#import "MVMacros.h"
 
 @interface NSString (MotiveExtension)
 
@@ -14,9 +13,14 @@ READ BOOL isNotEmpty;
 
 - (NSString *)trimNewLines;
 
-- (BOOL)touchFile;
+- (BOOL)touchFileAtPath;
 
-- (BOOL)fileExists;
+- (BOOL)fileExistsAtPath;
 
+// The size of the file at the path represented by this string or -1.
+- (NSNumber *)fileSizeAtPath;
+
+// MD5 hash for the file at the path represented by this string or nil.
+- (NSString *)md5ForFileAtPath;
 
 @end
