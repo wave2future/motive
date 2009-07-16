@@ -29,4 +29,10 @@
 // Is this date today?
 - (BOOL)isToday;
 
+// Is this date later than the |other| date?
+- (BOOL)laterThan:(NSDate *)other;
+
+// Is this date earlier than the |other| date?
+- (BOOL)earlierThan:(NSDate *)other;
+
 @end

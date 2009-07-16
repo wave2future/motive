@@ -60,4 +60,12 @@
     return [[self startOfDay] isEqual:[[NSDate date] startOfDay]];
 }
 
+- (BOOL)laterThan:(NSDate *)other {
+    return [self compare:other] == NSOrderedDescending;
+}
+
+- (BOOL)earlierThan:(NSDate *)other {
+    return [self compare:other] == NSOrderedAscending;
+}
+
 @end
