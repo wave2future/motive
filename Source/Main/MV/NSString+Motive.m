@@ -5,6 +5,10 @@
 
 static NSUInteger MVChunkSize = 1024;
 
++ (NSString *)stringWithData:(NSData *)data {
+    return [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+}
+
 - (BOOL)isEmpty {
     return [self length] == 0;
 }
@@ -13,8 +17,8 @@ static NSUInteger MVChunkSize = 1024;
     return !self.isEmpty;
 }
 
-+ (NSString *)stringWithData:(NSData *)data {
-    return [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+- (BOOL)contains:(NSString *)other {
+    return [self rangeOfString:other].length > 0;
 }
 
 - (NSData *)asData {

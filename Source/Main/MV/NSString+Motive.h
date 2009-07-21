@@ -7,6 +7,9 @@ READ BOOL isNotEmpty;
 
 + (NSString *)stringWithData:(NSData *)data;
 
+// YES if this string contains the |other| string.
+- (BOOL)contains:(NSString *)other;
+
 - (NSData *)asData;
 
 - (NSString *)trim;
