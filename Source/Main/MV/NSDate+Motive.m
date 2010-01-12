@@ -22,6 +22,15 @@
     return string;
 }
 
+- (NSString *)stringWithFormat:(NSString *)format andTimeZone:(NSString *)timeZone {
+    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:format];
+    [formatter setTimeZone: [NSTimeZone timeZoneWithName:timeZone]];
+    NSString *string = [formatter stringFromDate:self];
+    [formatter release];
+    return string;
+}
+
 - (NSString *)dateStringWithDaysOffset {
     NSTimeInterval now = [[NSDate date] timeIntervalSince1970];
     NSTimeInterval thisDate = self.timeIntervalSince1970;

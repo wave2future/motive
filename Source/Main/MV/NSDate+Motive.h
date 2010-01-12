@@ -11,6 +11,8 @@
 // This date as a string using |format|.
 - (NSString *)stringWithFormat:(NSString *)format;
 
+- (NSString *)stringWithFormat:(NSString *)format andTimeZone:(NSString *)timeZone;
+
 // This date as a string with number of days in the past/future it is, e.g. Wed 23 Nov, 2009 (+21).
 - (NSString *)dateStringWithDaysOffset;
 
