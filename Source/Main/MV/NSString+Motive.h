@@ -16,6 +16,8 @@ READ BOOL isNotEmpty;
 
 - (NSString *)trimNewLines;
 
+- (NSString *)md5;
+
 - (BOOL)touchFileAtPath;
 
 - (BOOL)fileExistsAtPath;

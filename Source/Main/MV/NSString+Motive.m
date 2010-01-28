@@ -33,6 +33,15 @@ static NSUInteger MVChunkSize = 1024;
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+- (NSString *)md5 {
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    const char *cStr = [self UTF8String];
+    CC_MD5(cStr, strlen(cStr), digest);
+    return [NSString stringWithFormat:@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",
+            digest[0], digest[1], digest[2], digest[3], digest[4], digest[5], digest[6], digest[7],
+            digest[8], digest[9], digest[10], digest[11], digest[12], digest[13], digest[14], digest[15]];
+}
+
 - (BOOL)touchFileAtPath {
     return [[NSFileManager defaultManager] createFileAtPath:self contents:nil attributes:nil];
 }
@@ -68,9 +77,9 @@ static NSUInteger MVChunkSize = 1024;
 
         unsigned char digest[CC_MD5_DIGEST_LENGTH];
         CC_MD5_Final(digest, &md5);
-        return [NSString stringWithFormat: @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
-                       digest[0], digest[1], digest[2], digest[3], digest[4], digest[5], digest[6], digest[7], digest[8], digest[9], digest[10], 
-                       digest[11], digest[12], digest[13], digest[14], digest[15]];
+        return [NSString stringWithFormat:@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",
+                digest[0], digest[1], digest[2], digest[3], digest[4], digest[5], digest[6], digest[7], 
+                digest[8], digest[9], digest[10], digest[11], digest[12], digest[13], digest[14], digest[15]];    
     }
 }
 
