@@ -22,13 +22,21 @@
     return string;
 }
 
-// TODO Calculate days forward/back from today.
+- (NSString *)stringWithFormat:(NSString *)format andTimeZone:(NSString *)timeZone {
+    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:format];
+    [formatter setTimeZone: [NSTimeZone timeZoneWithName:timeZone]];
+    NSString *string = [formatter stringFromDate:self];
+    [formatter release];
+    return string;
+}
+
 - (NSString *)dateStringWithDaysOffset {
     NSTimeInterval now = [[NSDate date] timeIntervalSince1970];
     NSTimeInterval thisDate = self.timeIntervalSince1970;
     int days = (int) ceil((thisDate - now) / 60.0 / 60.0 / 24.0);
     NSString *offset = days == 0 ? @" (Today)" : [NSString stringWithFormat:@" (%@%d)", days > 0 ? @"+" : @"", days];
-    return [NSString stringWithFormat:@"%@ %@%@", [self stringWithFormat:@"EEE"], self.dateString, offset];
+    return [NSString stringWithFormat:@"%@%@", [self stringWithFormat:@"EEE MMMM d, yyyy"], offset];
 }
 
 - (NSString *)dateString {
@@ -59,6 +67,14 @@
 
 - (BOOL)isToday {
     return [[self startOfDay] isEqual:[[NSDate date] startOfDay]];
+}
+
+- (BOOL)laterThan:(NSDate *)other {
+    return [self compare:other] == NSOrderedDescending;
+}
+
+- (BOOL)earlierThan:(NSDate *)other {
+    return [self compare:other] == NSOrderedAscending;
 }
 
 @end

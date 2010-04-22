@@ -39,6 +39,9 @@
 		E2BCDFCD0FBFEA2B00EBB41F /* NSDate+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCDFCB0FBFEA2B00EBB41F /* NSDate+Motive.h */; };
 		E2BCDFCE0FBFEA2B00EBB41F /* NSDate+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDFCC0FBFEA2B00EBB41F /* NSDate+Motive.m */; };
 		E2BCDFCF0FBFEA2B00EBB41F /* NSDate+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BCDFCC0FBFEA2B00EBB41F /* NSDate+Motive.m */; };
+		E2E310B60FCF8B6C00E7961B /* UIView+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E310B40FCF8B6C00E7961B /* UIView+Motive.h */; };
+		E2E310B70FCF8B6C00E7961B /* UIView+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E310B50FCF8B6C00E7961B /* UIView+Motive.m */; };
+		E2E310B80FCF8B6C00E7961B /* UIView+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E310B50FCF8B6C00E7961B /* UIView+Motive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,8 @@
 		E2BCDF580FBFE22000EBB41F /* NSString+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Motive.m"; sourceTree = "<group>"; };
 		E2BCDFCB0FBFEA2B00EBB41F /* NSDate+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Motive.h"; sourceTree = "<group>"; };
 		E2BCDFCC0FBFEA2B00EBB41F /* NSDate+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Motive.m"; sourceTree = "<group>"; };
+		E2E310B40FCF8B6C00E7961B /* UIView+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Motive.h"; sourceTree = "<group>"; };
+		E2E310B50FCF8B6C00E7961B /* UIView+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Motive.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +175,8 @@
 				E2BCDF540FBFE22000EBB41F /* NSDictionary+Motive.m */,
 				E2BCDF570FBFE22000EBB41F /* NSString+Motive.h */,
 				E2BCDF580FBFE22000EBB41F /* NSString+Motive.m */,
+				E2E310B40FCF8B6C00E7961B /* UIView+Motive.h */,
+				E2E310B50FCF8B6C00E7961B /* UIView+Motive.m */,
 			);
 			path = MV;
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 				E2BCDF630FBFE22000EBB41F /* NSDictionary+Motive.h in Headers */,
 				E2BCDF670FBFE22000EBB41F /* NSString+Motive.h in Headers */,
 				E2BCDFCD0FBFEA2B00EBB41F /* NSDate+Motive.h in Headers */,
+				E2E310B60FCF8B6C00E7961B /* UIView+Motive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +300,7 @@
 				E2BCDF640FBFE22000EBB41F /* NSDictionary+Motive.m in Sources */,
 				E2BCDF680FBFE22000EBB41F /* NSString+Motive.m in Sources */,
 				E2BCDFCE0FBFEA2B00EBB41F /* NSDate+Motive.m in Sources */,
+				E2E310B70FCF8B6C00E7961B /* UIView+Motive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +315,7 @@
 				E2BCDF6C0FBFE22000EBB41F /* NSDictionary+Motive.m in Sources */,
 				E2BCDF6E0FBFE22000EBB41F /* NSString+Motive.m in Sources */,
 				E2BCDFCF0FBFEA2B00EBB41F /* NSDate+Motive.m in Sources */,
+				E2E310B80FCF8B6C00E7961B /* UIView+Motive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,10 +369,11 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos2.2;
 			};
@@ -374,9 +385,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos2.2;
 			};

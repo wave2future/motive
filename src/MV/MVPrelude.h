@@ -7,3 +7,4 @@
 #import "NSDate+Motive.h"
 #import "NSDictionary+Motive.h"
 #import "NSString+Motive.h"
+#import "UIView+Motive.h"
