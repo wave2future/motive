@@ -1,2 +1,2 @@
 
-OTHER_LDFLAGS = $(OTHER_LDFLAGS) -framework UIKit
+OTHER_LDFLAGS = $(OTHER_LDFLAGS) -framework UIKit -framework AVFoundation
