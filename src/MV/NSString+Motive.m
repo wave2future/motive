@@ -22,7 +22,7 @@ static NSUInteger MVChunkSize = 1024;
 }
 
 - (NSData *)asData {
-    return [self dataUsingEncoding:NSStringEncodingConversionAllowLossy];
+    return [self dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (NSString *)trim {
