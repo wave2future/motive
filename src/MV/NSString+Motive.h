@@ -2,8 +2,8 @@
 
 @interface NSString (MotiveExtension)
 
-READ BOOL isEmpty;
-READ BOOL isNotEmpty;
+- (BOOL)isEmpty;
+- (BOOL)isNotEmpty;
 
 + (NSString *)stringWithData:(NSData *)data;
 
