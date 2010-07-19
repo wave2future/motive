@@ -37,4 +37,7 @@
 // Is this date earlier than the |other| date?
 - (BOOL)earlierThan:(NSDate *)other;
 
+// NSNumber should be a long long with millis since 1970 (ie. java system time millis)
++ (NSDate *)dateFromUTCMillis:(NSNumber *)n;
+
 @end

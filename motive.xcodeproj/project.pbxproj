@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47533C5611F3DE56005BE837 /* UITableView+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = 47533C5511F3DE56005BE837 /* UITableView+Motive.m */; };
+		47533C5711F3DE56005BE837 /* UITableView+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = 47533C5411F3DE56005BE837 /* UITableView+Motive.h */; };
+		47533C5811F3DE56005BE837 /* UITableView+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = 47533C5511F3DE56005BE837 /* UITableView+Motive.m */; };
 		47B7ACA0117EB5F80058A6CA /* motive.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 47B7AC9F117EB5F80058A6CA /* motive.xcconfig */; };
 		E23DB6D30F4D0263005C8EDA /* SynthesizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5D40F4D0262005C8EDA /* SynthesizeSingleton.h */; };
 		E23DB7660F4D0263005C8EDA /* MVThreadUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6C30F4D0263005C8EDA /* MVThreadUtil.h */; };
@@ -46,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		47533C5411F3DE56005BE837 /* UITableView+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Motive.h"; sourceTree = "<group>"; };
+		47533C5511F3DE56005BE837 /* UITableView+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Motive.m"; sourceTree = "<group>"; };
 		47B7AC9F117EB5F80058A6CA /* motive.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = motive.xcconfig; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23DB5D40F4D0262005C8EDA /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
@@ -177,6 +182,8 @@
 				E2BCDF580FBFE22000EBB41F /* NSString+Motive.m */,
 				E2E310B40FCF8B6C00E7961B /* UIView+Motive.h */,
 				E2E310B50FCF8B6C00E7961B /* UIView+Motive.m */,
+				47533C5411F3DE56005BE837 /* UITableView+Motive.h */,
+				47533C5511F3DE56005BE837 /* UITableView+Motive.m */,
 			);
 			path = MV;
 			sourceTree = "<group>";
@@ -201,6 +208,7 @@
 				E2BCDF670FBFE22000EBB41F /* NSString+Motive.h in Headers */,
 				E2BCDFCD0FBFEA2B00EBB41F /* NSDate+Motive.h in Headers */,
 				E2E310B60FCF8B6C00E7961B /* UIView+Motive.h in Headers */,
+				47533C5711F3DE56005BE837 /* UITableView+Motive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +309,7 @@
 				E2BCDF680FBFE22000EBB41F /* NSString+Motive.m in Sources */,
 				E2BCDFCE0FBFEA2B00EBB41F /* NSDate+Motive.m in Sources */,
 				E2E310B70FCF8B6C00E7961B /* UIView+Motive.m in Sources */,
+				47533C5811F3DE56005BE837 /* UITableView+Motive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +325,7 @@
 				E2BCDF6E0FBFE22000EBB41F /* NSString+Motive.m in Sources */,
 				E2BCDFCF0FBFEA2B00EBB41F /* NSDate+Motive.m in Sources */,
 				E2E310B80FCF8B6C00E7961B /* UIView+Motive.m in Sources */,
+				47533C5611F3DE56005BE837 /* UITableView+Motive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

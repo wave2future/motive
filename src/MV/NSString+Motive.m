@@ -70,11 +70,13 @@ static NSUInteger MVChunkSize = 1024;
         
         BOOL done = NO;
         while (!done) {
+            NSAutoreleasePool *p = [[NSAutoreleasePool alloc] init];
             NSData* fileData = [handle readDataOfLength:MVChunkSize];
             CC_MD5_Update(&md5, [fileData bytes], [fileData length]);
             if ([fileData length] == 0) done = YES;
+            [p release];
         }
-
+        
         unsigned char digest[CC_MD5_DIGEST_LENGTH];
         CC_MD5_Final(digest, &md5);
         return [NSString stringWithFormat:@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",

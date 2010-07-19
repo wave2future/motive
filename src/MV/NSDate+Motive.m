@@ -77,4 +77,8 @@
     return [self compare:other] == NSOrderedAscending;
 }
 
++ (NSDate *)dateFromUTCMillis:(NSNumber *)n {
+    NSTimeInterval secs = [n longLongValue]/1000;
+    return [NSDate dateWithTimeIntervalSince1970:secs];
+}
 @end

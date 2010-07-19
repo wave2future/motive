@@ -21,4 +21,8 @@
 - (id)firstObject {
 	return [self objectAtIndex:0];
 }
+
+- (BOOL)doesNotContainObject:(id)object {
+    return ![self containsObject:object];
+}
 @end
