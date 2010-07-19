@@ -8,3 +8,4 @@
 #import "NSDictionary+Motive.h"
 #import "NSString+Motive.h"
 #import "UIView+Motive.h"
+#import "UITableView+Motive.h"
