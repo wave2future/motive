@@ -51,7 +51,7 @@ static NSUInteger MVChunkSize = 1024;
 }
 
 - (NSNumber *)fileSizeAtPath {
-    NSDictionary *fileAttributes = [[NSFileManager defaultManager] fileAttributesAtPath:self traverseLink:YES];
+    NSDictionary *fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:self error:NULL];
     if (fileAttributes == nil) {
         return [NSNumber numberWithInt:-1];
     } else {

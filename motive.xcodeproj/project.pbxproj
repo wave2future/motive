@@ -10,7 +10,7 @@
 		47533C5611F3DE56005BE837 /* UITableView+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = 47533C5511F3DE56005BE837 /* UITableView+Motive.m */; };
 		47533C5711F3DE56005BE837 /* UITableView+Motive.h in Headers */ = {isa = PBXBuildFile; fileRef = 47533C5411F3DE56005BE837 /* UITableView+Motive.h */; };
 		47533C5811F3DE56005BE837 /* UITableView+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = 47533C5511F3DE56005BE837 /* UITableView+Motive.m */; };
-		47B7ACA0117EB5F80058A6CA /* motive.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 47B7AC9F117EB5F80058A6CA /* motive.xcconfig */; };
+		47D87B6112C30ABF003AE686 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 47D87B6012C30ABF003AE686 /* Config.xcconfig */; };
 		E23DB6D30F4D0263005C8EDA /* SynthesizeSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB5D40F4D0262005C8EDA /* SynthesizeSingleton.h */; };
 		E23DB7660F4D0263005C8EDA /* MVThreadUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E23DB6C30F4D0263005C8EDA /* MVThreadUtil.h */; };
 		E23DB7670F4D0263005C8EDA /* MVThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E23DB6C40F4D0263005C8EDA /* MVThreadUtil.m */; };
@@ -51,7 +51,7 @@
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		47533C5411F3DE56005BE837 /* UITableView+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Motive.h"; sourceTree = "<group>"; };
 		47533C5511F3DE56005BE837 /* UITableView+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Motive.m"; sourceTree = "<group>"; };
-		47B7AC9F117EB5F80058A6CA /* motive.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = motive.xcconfig; sourceTree = "<group>"; };
+		47D87B6012C30ABF003AE686 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libmotive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmotive.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23DB5D40F4D0262005C8EDA /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		E23DB6C30F4D0263005C8EDA /* MVThreadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVThreadUtil.h; sourceTree = "<group>"; };
@@ -115,12 +115,12 @@
 		0867D691FE84028FC02AAC07 /* motive */ = {
 			isa = PBXGroup;
 			children = (
+				47D87B6012C30ABF003AE686 /* Config.xcconfig */,
 				E25EDB8F0FC0FA3D003B974B /* README */,
 				E23DB6BC0F4D0263005C8EDA /* test */,
 				E23432140F6F12F80018BE5D /* src */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				47B7AC9F117EB5F80058A6CA /* motive.xcconfig */,
 			);
 			name = motive;
 			sourceTree = "<group>";
@@ -257,7 +257,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "motive" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* motive */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
@@ -274,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47B7ACA0117EB5F80058A6CA /* motive.xcconfig in Resources */,
+				47D87B6112C30ABF003AE686 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +381,7 @@
 		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47B7AC9F117EB5F80058A6CA /* motive.xcconfig */;
+			baseConfigurationReference = 47D87B6012C30ABF003AE686 /* Config.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -386,13 +393,13 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47B7AC9F117EB5F80058A6CA /* motive.xcconfig */;
+			baseConfigurationReference = 47D87B6012C30ABF003AE686 /* Config.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -402,7 +409,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
