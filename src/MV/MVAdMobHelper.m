@@ -30,22 +30,16 @@
 
 + (void)reportAppStartToAdMobWithUrl:(NSString *)url {
     if (![[MVAdMobHelper adMobAppOpenReportedFilePath] fileExistsAtPath]) {
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-        LOG(@"Reporting initial application start to AdMob on URL %@", [[request URL] absoluteString]);
-        NSURLResponse *response;
+        LOG(@"Reporting initial application start to AdMob on URL %@", url);
         NSError *error;
-        NSString *content = [NSString stringWithContentsOfURL:[request URL] encoding:NSUTF8StringEncoding error:&error];
-        if (error == nil && [self statusCodeForResponse:response] == 200 && [content isNotEmpty]) {
+        NSString *content = [NSString stringWithContentsOfURL:[NSURL URLWithString:url] encoding:NSUTF8StringEncoding error:&error];
+        if (error == nil && [content isNotEmpty]) {
             LOG(@"Successfully reported app open, response: %@", content);
             [[MVAdMobHelper adMobAppOpenReportedFilePath] touchFileAtPath];
         }
     } else {
         LOG(@"App has already been reported");      
     }
-}
-
-+ (NSInteger)statusCodeForResponse:(NSURLResponse *)response {
-	return response != nil && [response isKindOfClass:[NSHTTPURLResponse class]] ? [((NSHTTPURLResponse *) response) statusCode] : 0;
 }
 
 @end
