@@ -4,57 +4,46 @@
 //  Created by Matt Gallagher on 20/10/08.
 //
 
-#define SYNTHESIZE_SINGLETON_FOR_CLASS(classname) \
- \
-static classname *shared##classname = nil; \
- \
-+ (classname *)shared##classname \
-{ \
-	@synchronized(self) \
-	{ \
-		if (shared##classname == nil) \
-		{ \
-			[[self alloc] init]; \
-		} \
-	} \
-	 \
-	return shared##classname; \
-} \
- \
-+ (id)allocWithZone:(NSZone *)zone \
-{ \
-	@synchronized(self) \
-	{ \
-		if (shared##classname == nil) \
-		{ \
-			shared##classname = [super allocWithZone:zone]; \
-			return shared##classname; \
-		} \
-	} \
-	 \
-	return nil; \
-} \
- \
-- (id)copyWithZone:(NSZone *)zone \
-{ \
-	return self; \
-} \
- \
-- (id)retain \
-{ \
-	return self; \
-} \
- \
-- (NSUInteger)retainCount \
-{ \
-	return NSUIntegerMax; \
-} \
- \
-- (void)release \
-{ \
-} \
- \
-- (id)autorelease \
-{ \
-	return self; \
+#define SYNTHESIZE_SINGLETON_FOR_CLASS(klass)\
+\
+static klass *shared##klass = nil;\
+\
++ (klass *)shared##klass {\
+\
+@synchronized(self) {\
+if (shared##klass == nil) {\
+shared##klass = [[super allocWithZone:nil] init];\
+}\
+}\
+\
+return shared##klass;\
+}\
+\
++ (id)allocWithZone:(NSZone *)zone {\
+\
+return [[self shared##klass] retain];\
+}\
+\
+- (id)copyWithZone:(NSZone *)zone {\
+\
+return self;\
+}\
+\
+- (id)retain {\
+\
+return self;\
+}\
+\
+- (NSUInteger)retainCount {\
+\
+return NSUIntegerMax;\
+}\
+\
+- (void)release {\
+\
+}\
+\
+- (id)autorelease {\
+\
+return self;\
 }
