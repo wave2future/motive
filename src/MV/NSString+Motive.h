@@ -22,6 +22,8 @@
 
 - (BOOL)fileExistsAtPath;
 
+- (BOOL)caseInsensitiveFileExistsAtPath;
+
 // The size of the file at the path represented by this string or -1.
 - (NSNumber *)fileSizeAtPath;
 

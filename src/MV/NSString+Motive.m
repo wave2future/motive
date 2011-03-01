@@ -50,6 +50,25 @@ static NSUInteger MVChunkSize = 1024;
     return [[NSFileManager defaultManager] fileExistsAtPath:self];
 }
 
+- (BOOL)caseInsensitiveFileExistsAtPath {
+
+  NSError *error = nil;
+  NSArray *list = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[self stringByDeletingLastPathComponent] error:&error];
+  
+  if(error) {
+    NSLog(@"NSString+Motive:caseInsensitiveFileExistsAtPath - %@", [error localizedDescription]);
+    return NO;
+  }
+  
+  for(NSString *item in list) {
+    if([[self lastPathComponent] caseInsensitiveCompare:item] == NSOrderedSame) {
+      return YES;
+    }
+  }
+  
+  return NO;
+}
+
 - (NSNumber *)fileSizeAtPath {
     NSDictionary *fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:self error:NULL];
     if (fileAttributes == nil) {
