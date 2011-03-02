@@ -53,19 +53,29 @@ static NSUInteger MVChunkSize = 1024;
 - (BOOL)caseInsensitiveFileExistsAtPath {
 
   NSError *error = nil;
-  NSArray *list = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[self stringByDeletingLastPathComponent] error:&error];
+  NSString *path = [self stringByDeletingLastPathComponent];
+  
+  if(![path fileExistsAtPath]) {
+    // Path doesn't exist yet
+    return NO;
+  }
+  
+  NSArray *list = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:&error];
   
   if(error) {
-    NSLog(@"NSString+Motive:caseInsensitiveFileExistsAtPath - %@", [error localizedDescription]);
+    // Couldn't get a directory listing for some reason
+    NSLog(@"NSString+Motive:caseInsensitiveFileExistsAtPath - %@, %@", path, [error localizedDescription]);
     return NO;
   }
   
   for(NSString *item in list) {
     if([[self lastPathComponent] caseInsensitiveCompare:item] == NSOrderedSame) {
+      // Found it!
       return YES;
     }
   }
   
+  // Couldn't find the file
   return NO;
 }
 
